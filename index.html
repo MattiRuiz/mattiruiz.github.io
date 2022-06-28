@@ -10,11 +10,14 @@
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pages/index.css">
+    <!-- Estilos JS -->
+    <script src="js/common.js" defer></script>
+    <script src="js/pages/index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1><img src="img/sunny.png" alt=""><span>Clima App</span></h1>
+        <h1><img src="img/sunny.png" alt="Icono del Clima App"><span>Clima App</span></h1>
         <nav>
             <ul>
                 <li class="current-page"><a href="#">Clima</a></li>
@@ -29,22 +32,27 @@
         <section id="form-city-list">
             <select name="ciudad" id="selectorCiudad">
                 <option value="" disabled selected>Seleccionar ciudad</option>
-                <option value="ROSARIO">Rosario</option>
-                <option value="RAFAELA">Rafaela</option>
             </select>
-            <button>Consultar</button>
+            <button type="button" id="botonConsulta">Consultar</button>
         </section>
         <section id="section-weather-result">
-            <div class="card">
-                <h3>Rosario</h3>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">
-                <p>Temperatura: 25.31°</p>
-                <p>Sensación térmica: 24.65°</p>
-                <p>Humedad: 29%</p>
-                <p>Velocidad del viento: 4.63km/h</p>
-                <p>Presión: 1011 P</p>
+            <div id="presentacion">
+                <h5>Selecione una ciudad para comenzar</h5>
             </div>
+            <div class="card" id="carta">
+                <h3 id="ciudadTitulo">Rosario</h3>
+                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Soleado" id="ciudadIcono">
+                <p id="ciudadTemp">Temperatura: 25.31°</p>
+                <p id="ciudadTermica">Sensación térmica: 24.65°</p>
+                <p id="ciudadHumedad">Humedad: 29%</p>
+                <p id="ciudadViento">Velocidad del viento: 4.63km/h</p>
+                <p id="ciudadPresion">Presión: 1011 P</p>
+            </div>
+            
         </section>
+        <div class="mensaje" id="warning">
+            <p>Haga click en "Agregar Ciudad" o <a href="add-city.html">AQUÍ</a> para ingresar una ciudad y poder comenzar a usar la APP</p>
+        </div>
     </main>
 
     <footer>

@@ -13,11 +13,20 @@
     --color-gradient: linear-gradient(to right, var(--color-theme),
     var(--color-back-active));
     --color-error: #dc3545;
+    --color-sucess: #28a745;
+    --color-warning: #ffc107;
+    --color-error: #dc3545;
 }
 
 body {
     height: 100%;
     width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 ul {
@@ -141,6 +150,11 @@ button:hover {
     background-color: var(--color-back-active);
 }
 
+button:active {
+    background-color: var(--color-theme);
+}
+
+
 label {
     font-size: 11px;
     font-weight: bold;
@@ -156,6 +170,28 @@ input {
 }
 
 input:focus-visible {
+    outline: none;
+}
+
+textarea {
+    border: 1px solid #000;
+    border-radius: 5px;
+    resize: none;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+textarea:focus-visible {
+    outline: none;
+}
+
+select {
+    border-radius: 5px;
+    padding: 0 10px;
+    border-color: #000;
+}
+
+select:focus-visible {
     outline: none;
 }
 
@@ -178,6 +214,21 @@ input:focus-visible {
     margin: 0;
 }
 
+#success {
+    background-color: var(--color-sucess);
+    display: none;
+}
+
+#warning {
+    background-color: var(--color-warning);
+    display: none;
+}
+
+#error {
+    background-color: var(--color-error);
+    display: none;
+}
+
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
         main {
@@ -189,3 +240,9 @@ input:focus-visible {
             padding-bottom: 20px;
         }
     }
+
+#cuadrado {
+    background-color: #dc3545;
+    width: 100px;
+    height: 100px;
+}

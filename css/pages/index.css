@@ -4,6 +4,7 @@
     box-shadow: 2px 2px 10px 1px rgba(0,0,0,0.4);
     padding: 10px 20px 0;
     border-radius: 25px;
+    display: none;
 }
 
 .card p {
@@ -12,12 +13,7 @@
     margin-bottom: 12px;
 }
 
-select {
-    border-radius: 5px;
-    padding: 0 10px;
-    border-color: #000;
-}
-
-select:focus-visible {
-    outline: none;
+#presentacion {
+    margin: 40px 0;
+    color: #00594c;
 }
