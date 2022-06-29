@@ -8,6 +8,7 @@ let selectorDeCiudades = document.getElementById("selectorCiudad")
 let mensajeWarning = document.getElementById("warning")
 let cardDatos = document.getElementById("carta")
 let presentacion = document.getElementById("presentacion")
+let spinner = document.getElementById("spinner")
 
 /* Clicker boton agregar */
 botonConsulta.addEventListener("click", fetchCiudad)
@@ -50,6 +51,7 @@ function limpiarMensajes(){
     mensajeWarning.style.display = "none";
 }
 
+/* Fetch a la api */
 function fetchCiudad(){
     ciudad = devolverCiudad()
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${weatherKey}&units=metric&lang=es`)
@@ -66,17 +68,22 @@ let ciudadHumedad = document.getElementById("ciudadHumedad")
 let ciudadViento = document.getElementById("ciudadViento")
 let ciudadPresion = document.getElementById("ciudadPresion")
 
-
+/* Carga de datos en la card */
 function agregarInformacion(data) {
-    console.log(data)
-    cardDatos.style.display = "block"
+    cardDatos.style.display = "none"
     presentacion.style.display = "none"
-    ciudadTitulo.innerHTML = data.name
-    ciudadIcono.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    ciudadTemp.innerHTML = `Temperatura: ${data.main.temp}°`
-    ciudadTermica.innerHTML = `Sensación térmica: ${data.main.feels_like}°`
-    ciudadHumedad.innerHTML = `Humedad: ${data.main.humidity}%`
-    ciudadViento.innerHTML = `Velocidad del viento: ${data.wind.speed}km/h`
-    ciudadPresion.innerHTML = `Presión: ${data.main.pressure} P`
+    spinner.style.display= "block"
+    setTimeout(function myfunction() { 
+        ciudadTitulo.innerHTML = data.name
+        ciudadIcono.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+        ciudadTemp.innerHTML = `Temperatura: ${data.main.temp}°`
+        ciudadTermica.innerHTML = `Sensación térmica: ${data.main.feels_like}°`
+        ciudadHumedad.innerHTML = `Humedad: ${data.main.humidity}%`
+        ciudadViento.innerHTML = `Velocidad del viento: ${data.wind.speed}km/h`
+        ciudadPresion.innerHTML = `Presión: ${data.main.pressure} P`
+        spinner.style.display= "none" 
+        cardDatos.style.display = "block"
+    }, 3000)
+    
 }
 

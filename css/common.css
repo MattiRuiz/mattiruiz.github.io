@@ -229,6 +229,12 @@ select:focus-visible {
     display: none;
 }
 
+/* Spinner propio */
+#spinner {
+    display: none;
+    margin-top: 40px;
+}
+
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {
         main {

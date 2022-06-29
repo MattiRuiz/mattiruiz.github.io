@@ -6,6 +6,7 @@ let botonAgregar = document.getElementById("botonAgregar")
 let mensajeError = document.getElementById("error")
 let mensajeSuccess = document.getElementById("success")
 let mensajeWarning = document.getElementById("warning")
+let spinner = document.getElementById("spinner")
 
 /* Clicker boton agregar */
 botonAgregar.addEventListener("click", agregarCiudad)
@@ -23,19 +24,24 @@ function agregarCiudad(){
     let ciudadNueva = document.getElementById("ingresoCiudad").value;
     
     try{
-        if(ciudadNueva){
-            let listaCiudades = obtenerCiudadDelStorage()
-
-            if (listaCiudades.includes(ciudadNueva)){
-                mensajeWarning.style.display = "inline";
+        spinner.style.display= "block"
+        setTimeout(function myfunction() { 
+            spinner.style.display= "none"
+            if(ciudadNueva){
+                let listaCiudades = obtenerCiudadDelStorage()
+                
+                if (listaCiudades.includes(ciudadNueva)){
+                    mensajeWarning.style.display = "inline";
+                } else {
+                    agregarCiudadAlStorage(ciudadNueva);
+                    mensajeSuccess.style.display = "inline"
+                }
+    
             } else {
-                agregarCiudadAlStorage(ciudadNueva);
-                mensajeSuccess.style.display = "inline"
+                mensajeError.style.display = "inline";
             }
-
-        } else {
-            mensajeError.style.display = "inline";
-        }
+        }, 2000)
+        
     } catch {
         mensajeError.style.display = "inline";
         alert("Hubo un error con la conexion al localStorage")
