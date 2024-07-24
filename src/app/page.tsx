@@ -25,35 +25,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import Proyectos from "../components/Proyectos";
 
 import tutesin from "../img/tutesin.jpg";
-import imgDefecto from "../img/placeholder-1024x1024.png";
 
 export default function Home() {
   return (
     <main>
-      <div className="container mx-auto py-3 flex flex-row justify-between">
-        <h1 className="text-xl ">
-          MRuiz | <span className="text-slate-500 font-semibold">Porfolio</span>
-        </h1>
-        <div>
-          <ul className="flex">
-            <li>
-              <Link href="#" className="py-2 ps-6 hover:text-slate-400">
-                Sobre mi
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="py-2 ps-6 hover:text-slate-400">
-                Trabajos
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="py-2 ps-6 hover:text-slate-400">
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
       <div className="container mx-auto">
         <div className="flex flex-row items-center justify-center py-10">
           <div className="basis-1/5 me-10">
@@ -61,9 +36,15 @@ export default function Home() {
           </div>
           <div>
             <p className="">Hola, soy</p>
-            <h5 className="mb-1 font-semibold text-xl tracking-wide">Matias Ruiz</h5>
-            <h1 className="text-5xl text-slate-400 tracking-tight">Lic. en Diseño Gráfico</h1>
-            <h1 className="text-5xl text-slate-600 tracking-tight ">Tec. en Programación</h1>
+            <h5 className="mb-1 font-semibold text-xl tracking-wide">
+              Matias Ruiz
+            </h5>
+            <h1 className="text-5xl text-slate-400 tracking-tight">
+              Lic. en Diseño Gráfico
+            </h1>
+            <h1 className="text-5xl text-slate-600 tracking-tight ">
+              Tec. en Programación
+            </h1>
             <button className="mt-5">Contacto</button>
           </div>
         </div>
@@ -72,31 +53,45 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-4 divide-x divide-dashed">
             <div className="px-10">
               <p className="text-xl font-bold mb-2">Diseño de interfaces</p>
-              <p>Creación de maquetas, análisis de webs, modificaciones, adaptaciones.</p>
+              <p>
+                Creación de maquetas, análisis de webs, modificaciones,
+                adaptaciones.
+              </p>
             </div>
             <div className="px-10">
-              <p className="text-xl font-bold mb-2">Diseño de comunicación visual</p>
-              <p>Comunicación institucional, diseño editorial, diseño de plantillas.</p>
+              <p className="text-xl font-bold mb-2">
+                Diseño de comunicación visual
+              </p>
+              <p>
+                Comunicación institucional, diseño editorial, diseño de
+                plantillas.
+              </p>
             </div>
             <div className="px-10">
               <p className="text-xl font-bold mb-2">Programación front-end</p>
-              <p>Con conocimientos en HTML/CSS, Reactjs, Nextjs, Bootstrap, Tailwindcss.</p>
+              <p>
+                Con conocimientos en HTML/CSS, Reactjs, Nextjs, Bootstrap,
+                Tailwindcss.
+              </p>
             </div>
           </div>
         </div>
         <div className="pb-3 pt-6 text-center w-2/3 mx-auto">
           <h3 className="mb-4">Sobre mi</h3>
           <p>
-            ¡Hola! Me llamo Matias, tengo 33 años y vivo en Rosario, Argentina. En el año 2019 me recibí de Licenciado
-            en Diseño Gráfico en la Universidad Abierta Interamericana y en el 2023 de Técnico Universitario en
-            Programación en la Universidad Tecnológica de Rosario. A partir de recibirme de Diseñador he tenido
-            variopintos tipos de trabajos, la mayoría de manera Freelance, los cuales se encuentran expuestos en la
-            sección de abajo los más actuales y en{" "}
+            ¡Hola! Me llamo Matias, tengo 33 años y vivo en Rosario, Argentina.
+            En el año 2019 me recibí de Licenciado en Diseño Gráfico en la
+            Universidad Abierta Interamericana y en el 2023 de Técnico
+            Universitario en Programación en la Universidad Tecnológica de
+            Rosario. A partir de recibirme de Diseñador he tenido variopintos
+            tipos de trabajos, la mayoría de manera Freelance, los cuales se
+            encuentran expuestos en la sección de abajo los más actuales y en{" "}
             <a href="#" className="font-bold">
               Behance
             </a>{" "}
-            los mas antiguos. Actualmente me encuentro trabajando de profesor de la materia "Tipografía y entorno
-            digital" en la Universidad del Gran Rosario.
+            los mas antiguos. Actualmente me encuentro trabajando de profesor de
+            la materia "Tipografía y entorno digital" en la Universidad del Gran
+            Rosario.
           </p>
         </div>
         <div className="my-3">
@@ -187,8 +182,10 @@ export default function Home() {
           </div>
           <div className="w-2/3 mx-auto mt-3">
             <p className="text-sm text-center">
-              <strong>Otras habilidades:</strong> Comerciales (12 años en atención al cliente), enseñanza (1,5 años de
-              profesor universitario), Inglés (nivél intermedio). Especialización en Tipografía y Ortotipografía.
+              <strong>Otras habilidades:</strong> Comerciales (12 años en
+              atención al cliente), enseñanza (1,5 años de profesor
+              universitario), Inglés (nivél intermedio). Especialización en
+              Tipografía y Ortotipografía.
             </p>
           </div>
         </div>

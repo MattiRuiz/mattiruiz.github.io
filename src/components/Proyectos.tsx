@@ -5,7 +5,10 @@ import CardProyecto from "./CardProyecto";
 
 function Proyectos() {
   const [categoria, setCategoria] = useState<string>("programacion");
-  const [data, setData] = useState<{ programacion: any[]; disenio: any[] }>({ programacion: [], disenio: [] });
+  const [data, setData] = useState<{ programacion: any[]; disenio: any[] }>({
+    programacion: [],
+    disenio: [],
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,14 +38,26 @@ function Proyectos() {
           Diseño
         </button>
       </div>
-      <div className="flex gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {categoria === "programacion" &&
           data.programacion.map((item, index) => (
-            <CardProyecto key={index} nombre={item.nombre} herramientas={item.herramientas} imagen={item.imagen} />
+            <CardProyecto
+              key={index}
+              nombre={item.nombre}
+              herramientas={item.herramientas}
+              imagen={item.imagen}
+              link={item.link}
+            />
           ))}
         {categoria === "disenio" &&
           data.disenio.map((item, index) => (
-            <CardProyecto key={index} nombre={item.nombre} herramientas={item.herramientas} imagen={item.imagen} />
+            <CardProyecto
+              key={index}
+              nombre={item.nombre}
+              herramientas={item.herramientas}
+              imagen={item.imagen}
+              link={item.link}
+            />
           ))}
       </div>
     </>
