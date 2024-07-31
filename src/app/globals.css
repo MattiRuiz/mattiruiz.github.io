@@ -6,8 +6,28 @@ body {
   @apply bg-slate-950 text-slate-100;
 }
 
+p {
+  @apply text-lg leading-relaxed mb-3 tracking-tight;
+}
+
+a {
+  @apply font-bold text-slate-300;
+}
+
+li {
+  @apply tracking-tight;
+}
+
+h6 {
+  @apply font-bold text-lg mb-1 leading-tight;
+}
+
+h5 {
+  @apply text-xl leading-tight font-semibold;
+}
+
 h4 {
-  @apply text-xl font-bold;
+  @apply text-xl font-bold mb-2;
 }
 
 h3 {
@@ -19,11 +39,19 @@ h2 {
 }
 
 h1 {
-  @apply text-5xl tracking-tight
+  @apply text-5xl tracking-tight;
 }
 
 button {
-  @apply bg-slate-700 px-3 py-2;
+  @apply bg-slate-700  hover:bg-slate-800 px-3 py-2 font-semibold rounded-sm;
+}
+
+input {
+  @apply bg-slate-300 text-slate-900 px-3 py-2 rounded-sm  text-sm placeholder-slate-500 mb-3;
+}
+
+textarea {
+  @apply bg-slate-300 text-slate-900 px-3 py-2 rounded-sm text-sm placeholder-slate-500 mb-2;
 }
 
 .aspect-w-4 {

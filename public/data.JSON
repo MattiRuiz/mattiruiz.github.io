@@ -1,42 +1,44 @@
 {
     "programacion": [
         {
-            "nombre": "Catálogo Marca Blanca",
+            "nombre": "App Web: Catálogo Marca Blanca",
             "herramientas": "React.js, Bootstrap, Figma",
             "imagen": "/imagenes/catalogo.jpg",
-            "link": ""
+            "link": "/programacion/catalogo-marca-blanca"
         },
-        {
-            "nombre": "Juguetería Abracadabra",
-            "herramientas": "Wordpress, Wp Local, Figma",
-            "imagen": "",
-            "link": ""
-        }
-    ],
-    "disenio": [
         {
             "nombre": "Rediseño del Entorno Virtual de la Universidad del Gran Rosario",
             "herramientas": "Moodle, CSS, Figma",
             "imagen": "/imagenes/UGR-entornovirtual.jpg",
-            "link": ""
+            "link": "/programacion/entorno-virtual-ugr"
+        },        
+        {
+            "nombre": "Rediseño y administración del sitio de booking: Medanos Patagonia",
+            "herramientas": "Wordpress, CSS",
+            "imagen": "/imagenes/medanos-patagonia.jpg",
+            "link": "/programacion/medanos-patagonia"
+        }
+    ],
+    "disenio": [
+
+        {
+            "nombre": "ShopyLibre: otros trabajos",
+            "herramientas": "Adobe Illustrator, Adobe Photoshop",
+            "imagen": "/imagenes/shopylibre-miniatura.jpg",
+            "link": "/disenio/shopylibre-otros-trabajos"
         },
         {
-            "nombre": "Medanos Patagonia",
-            "herramientas": "Wordpress, FTP",
-            "imagen": "",
-            "link": ""
+            "nombre": "Packaging para la Afeitadora RollerShaver",
+            "herramientas": "Adobe Illustrator, Adobe Photoshop",
+            "imagen": "/imagenes/afeitadora-muckup.png",
+            "link": "/disenio/packaging-rollershaver"
         },
         {
-            "nombre": "ShopyLibre",
-            "herramientas": "Adobe Photoshop, Adobe Illustrator",
-            "imagen": "",
-            "link": ""
-        },
-        {
-            "nombre": "Maquetación de Presentación Powerpoint",
+            "nombre": "Diseño y Maquetación de Presentación Profesional",
             "herramientas": "Powerpoint",
             "imagen": "/imagenes/05-despues.jpg",
             "link": "/disenio/maquetacion-en-powerpoint"
         }
+
     ]
 }

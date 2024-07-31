@@ -9,25 +9,17 @@ interface CardProyectoProps {
   link: string;
 }
 
-function CardProyecto({
-  nombre,
-  herramientas,
-  imagen,
-  link,
-}: CardProyectoProps) {
+function CardProyecto({ nombre, herramientas, imagen, link }: CardProyectoProps) {
   return (
-    <Link href={link ? link : "#"}>
-      <div className="relative aspect-w-4 aspect-h-3 overflow-hidden">
-        <Image
-          src={imagen ? imagen : imgDefecto}
-          alt={nombre}
-          layout="fill"
-          objectFit="cover"
-        />
+    <Link href={link ? link : "#"} className="bg-slate-100  rounded-sm">
+      <div className="relative aspect-w-4 aspect-h-3 overflow-hidden shadow rounded-t-sm">
+        <Image src={imagen ? imagen : imgDefecto} alt={nombre} layout="fill" objectFit="cover" />
       </div>
-      <div className="py-2">
-        <h5 className="text-xl font-semibold mb-0.5">{nombre}</h5>
-        <p className="text-sm">{herramientas}</p>
+      <div className="p-4">
+        <p className="text-sm mb-0.5 text-slate-100 font-semibold bg-slate-900 inline-block py-1 px-2 rounded-sm">
+          {herramientas}
+        </p>
+        <h5 className="text-slate-950">{nombre}</h5>
       </div>
     </Link>
   );
