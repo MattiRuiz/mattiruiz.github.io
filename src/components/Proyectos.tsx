@@ -1,24 +1,64 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import CardProyecto from "./CardProyecto";
 
+const data = [
+  {
+    nombre: "App Web: Catálogo Marca Blanca",
+    herramientas: "React.js, Bootstrap, Figma",
+    imagen: "/imagenes/catalogo.jpg",
+    link: "/programacion/catalogo-marca-blanca",
+    especialidad: "programacion",
+  },
+  {
+    nombre: "Rediseño del Entorno Virtual de la Universidad del Gran Rosario",
+    herramientas: "Moodle, CSS, Figma",
+    imagen: "/imagenes/UGR-entornovirtual.jpg",
+    link: "/programacion/entorno-virtual-ugr",
+    especialidad: "programacion",
+  },
+  {
+    nombre: "Rediseño y administración del sitio de booking: Medanos Patagonia",
+    herramientas: "Wordpress, CSS",
+    imagen: "/imagenes/medanos-patagonia.jpg",
+    link: "/programacion/medanos-patagonia",
+    especialidad: "programacion",
+  },
+  {
+    nombre: "ShopyLibre: otros trabajos",
+    herramientas: "Adobe Illustrator, Adobe Photoshop",
+    imagen: "/imagenes/shopylibre-miniatura.jpg",
+    link: "/disenio/shopylibre-otros-trabajos",
+    especialidad: "disenio",
+  },
+  {
+    nombre: "Packaging para la Afeitadora RollerShaver",
+    herramientas: "Adobe Illustrator, Adobe Photoshop",
+    imagen: "/imagenes/afeitadora-muckup.png",
+    link: "/disenio/packaging-rollershaver",
+    especialidad: "disenio",
+  },
+  {
+    nombre: "Diseño y Maquetación de Presentación Profesional",
+    herramientas: "Powerpoint",
+    imagen: "/imagenes/05-despues.jpg",
+    link: "/disenio/maquetacion-en-powerpoint",
+    especialidad: "disenio",
+  },
+];
+
+interface ProyectoData {
+  nombre: string;
+  herramientas: string;
+  imagen: string;
+  link: string;
+  especialidad: string;
+}
+
 export function Proyectos() {
   const [categoria, setCategoria] = useState<string>("programacion");
-  const [data, setData] = useState<{ programacion: any[]; disenio: any[] }>({
-    programacion: [],
-    disenio: [],
-  });
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await fetch("/data.json");
-      const result = await response.json();
-      setData(result);
-    };
-
-    fetchData();
-  }, []);
+  const [proyectos, setProyectos] = useState<ProyectoData[]>(data);
 
   return (
     <>
@@ -41,18 +81,9 @@ export function Proyectos() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {categoria === "programacion" &&
-          data.programacion.map((item, index) => (
-            <CardProyecto
-              key={index}
-              nombre={item.nombre}
-              herramientas={item.herramientas}
-              imagen={item.imagen}
-              link={item.link}
-            />
-          ))}
-        {categoria === "disenio" &&
-          data.disenio.map((item, index) => (
+        {proyectos
+          .filter((item) => item.especialidad === categoria)
+          .map((item, index) => (
             <CardProyecto
               key={index}
               nombre={item.nombre}
