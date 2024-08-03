@@ -3,29 +3,20 @@ import Image from "next/image";
 
 import { PiArrowCircleLeftDuotone } from "react-icons/pi";
 
+import { HeaderProyecto } from "@/components/ui";
+
 function UGRVirtual() {
   return (
     <div className="mx-auto">
-      <div className="flex flex-grow mb-6 gap-x-6 items-center border rounded">
-        <div>
-          <Image src="/imagenes/ugr-celular.jpg" alt="" width={400} height={700} />
-        </div>
-        <div className="p-4">
-          <h6>Moodle, CSS, Figma</h6>
-          <h1 className="mb-6 text-slate-400">
-            Rediseño del Entorno Virtual de la <span className="text-white">Universidad del Gran Rosario</span>
-          </h1>
-          <div className="flex">
-            <p>
-              <strong>Estado:</strong> Activo <span className="italic text-sm">(se requiere acceso)</span>
-            </p>
-            <div className="bg-green-500 w-3 h-3 rounded-xl mt-1 ms-1.5"></div>
-          </div>
-          <Link href="https://virtual.ugr.edu.ar/">
-            <button>Ir al sitio</button>
-          </Link>
-        </div>
-      </div>
+      <HeaderProyecto
+        herramientas="Moodle, CSS, Figma"
+        titulo="Rediseño del Entorno Virtual de la Universidad del Gran Rosario"
+        estado="Activo (se requiere acceso)"
+        color="green"
+        link="https://virtual.ugr.edu.ar/"
+      >
+        <Image src="/imagenes/ugr-celular.jpg" alt="" width={400} height={700} className="rounded-s-md" />
+      </HeaderProyecto>
       <p>
         La{" "}
         <Link href="https://ugr.edu.ar/" target="_blank">

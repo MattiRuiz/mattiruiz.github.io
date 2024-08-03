@@ -3,7 +3,7 @@ interface AlertaProps {
   mensaje: string;
 }
 
-function ToastAlerta({ color, mensaje }: AlertaProps) {
+export function ToastAlerta({ color, mensaje }: AlertaProps) {
   return (
     <>
       <div className="bg-white px-4 py-2 fixed bottom-3 right-6 rounded-md">

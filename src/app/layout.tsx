@@ -25,24 +25,33 @@ export default function RootLayout({
       <body className={`${inter.className} container mx-auto px-6`}>
         <div className="container mx-auto py-3 flex flex-row justify-between mb-6">
           <Link href="/">
-            <h1 className="text-xl ">
-              MRuiz | <span className="text-slate-500 font-semibold">Porfolio</span>
+            <h1 className="text-xl text-slate-100 hover:text-slate-300 tracking-normal">
+              MRuiz | <span className="text-slate-500 font-semibold ">Porfolio</span>
             </h1>
           </Link>
           <div>
             <ul className="flex">
               <li>
-                <Link href="/#sobre-mi" className="py-2 ps-6 hover:text-slate-400">
+                <Link
+                  href="/#sobre-mi"
+                  className="py-2 ps-6 text-white hover:text-slate-300 font-semibold tracking-normal"
+                >
                   Sobre mi
                 </Link>
               </li>
               <li>
-                <Link href="/#mis-proyectos" className="py-2 ps-6 hover:text-slate-400">
+                <Link
+                  href="/#mis-proyectos"
+                  className="py-2 ps-6 text-white hover:text-slate-300 font-semibold tracking-normal"
+                >
                   Proyectos
                 </Link>
               </li>
               <li>
-                <Link href="/#contacto" className="py-2 ps-6 hover:text-slate-400">
+                <Link
+                  href="/#contacto"
+                  className="py-2 ps-6 text-white hover:text-slate-300 font-semibold tracking-normal"
+                >
                   Contacto
                 </Link>
               </li>

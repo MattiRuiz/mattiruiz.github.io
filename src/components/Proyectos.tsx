@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import CardProyecto from "./CardProyecto";
 
-function Proyectos() {
+export function Proyectos() {
   const [categoria, setCategoria] = useState<string>("programacion");
   const [data, setData] = useState<{ programacion: any[]; disenio: any[] }>({
     programacion: [],
@@ -22,23 +22,25 @@ function Proyectos() {
 
   return (
     <>
-      <div className="flex justify-center gap-1 mb-2">
+      <div className="mb-4 relative">
         <button
-          className="border-b-4 border-b-slate-600 disabled:border-b-slate-300"
+          className="border-b-2 border-b-slate-600 disabled:border-b-slate-300 pe-3 py-2 font-medium"
           onClick={() => setCategoria("programacion")}
           disabled={categoria === "programacion"}
         >
           Programación
         </button>
         <button
-          className="border-b-4 border-b-slate-600 disabled:border-b-slate-300"
+          className="border-b-2 border-b-slate-600 disabled:border-b-slate-300 px-3 py-2 font-medium"
           onClick={() => setCategoria("disenio")}
           disabled={categoria === "disenio"}
         >
           Diseño
         </button>
+        <div className="w-full h-px bg-white opacity-30 absolute bottom-0 right-0"></div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {categoria === "programacion" &&
           data.programacion.map((item, index) => (
             <CardProyecto

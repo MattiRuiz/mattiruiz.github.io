@@ -3,23 +3,21 @@ import Image from "next/image";
 
 import { PiArrowCircleLeftDuotone } from "react-icons/pi";
 
+import { HeaderProyecto } from "@/components/ui";
+
 function Powerpoint() {
   return (
     <div className="mx-auto">
-      <div className="flex flex-grow p-10 mb-6 gap-x-6 items-center border rounded">
-        <div>
-          <h6>Microsoft PowerPoint</h6>
-          <h1 className="mb-6 text-slate-400">
-            Diseño y Maquetación de <span className="text-white">Presentación Profesional</span>
-          </h1>
-          <div className="flex">
-            <p>
-              <strong>Estado:</strong> Finalizado
-            </p>
-            <div className="bg-green-500 w-3 h-3 rounded-xl mt-1 ms-1.5"></div>
-          </div>
-        </div>
-      </div>
+      <HeaderProyecto
+        herramientas="Microsoft PowerPoint"
+        titulo="Diseño y Maquetación de Presentación Profesional"
+        estado="Finalizado"
+        color=""
+        link=""
+      >
+        <Image src="/imagenes/presentacion-miniatura.jpg" alt="" width={300} height={700} className="rounded-s-md" />
+      </HeaderProyecto>
+
       <p>
         Este proyecto consistió en el diseño y maquetación de 28 diapositivas para una presentación profesional,
         realizado a través de la plataforma <strong>Upwork</strong> entre el 4 y el 6 de marzo de 2022. A continuación

@@ -8,7 +8,9 @@ import { PiMapPinBold, PiEnvelopeBold, PiDeviceMobileBold } from "react-icons/pi
 
 import ToastAlerta from "./ToastAlerta";
 
-function BloqueContacto() {
+import { Boton, Input } from "./ui";
+
+export function BloqueContacto() {
   const form = useRef<HTMLFormElement>(null);
 
   const [showAlert, setShowAlert] = useState<boolean>(false);
@@ -67,7 +69,7 @@ function BloqueContacto() {
 
   return (
     <>
-      <div className="bg-slate-700 px-10 py-8 my-6 rounded-sm shadow" id="contacto">
+      <div className="bg-slate-800 border border-slate-700 px-10 py-8 my-6 rounded-md shadow" id="contacto">
         <div className="sm:flex inline-block flex-row justify-center gap-x-4">
           <div className="sm:basis-2/5 w-full mb-4">
             <div className="mb-6">
@@ -90,27 +92,29 @@ function BloqueContacto() {
               </li>
             </ul>
             <Link href="https://api.whatsapp.com/send?phone=5493416437862" target="_blank">
-              <button className="flex items-center bg-slate-900 py-2 px-3">
-                <FaWhatsapp className="me-1 text-xl" /> Escribime por Whatsapp
-              </button>
+              <Boton>
+                <div className="flex items-center">
+                  <FaWhatsapp className="me-1 text-xl" /> Escribime por Whatsapp
+                </div>
+              </Boton>
             </Link>
           </div>
           <div className="basis-3/5">
             <h3>Enviame un mensaje</h3>
             <p>Rellena el formulario y te responderé a la brevedad.</p>
             <form ref={form} onSubmit={sendEmail} className="w-4/5">
-              <input type="text" placeholder="Nombre" name="user_name" className="block w-full" />
-              <input type="text" placeholder="Email" name="user_email" className="block w-full" />
-              <input type="number" placeholder="Celular" name="user_phone" className="block w-full" />
-              <textarea placeholder="Mensaje" rows={2} name="message" className="mb-3 block w-full" />
-              <button
-                type="submit"
-                value="Send"
-                className="px-3 py-2 bg-slate-900 disabled:bg-slate-600"
-                disabled={loading}
-              >
+              <Input type="text" placeholder="Nombre" name="user_name" />
+              <Input type="email" placeholder="Email" name="user_email" />
+              <Input type="number" placeholder="Celular" name="user_phone" />
+              <textarea
+                placeholder="Mensaje"
+                rows={2}
+                name="message"
+                className="mb-3 block w-full bg-slate-200 text-slate-900 px-3 py-2 rounded-md text-sm placeholder-slate-600"
+              />
+              <Boton type="submit" value="Send" disabled={loading}>
                 {loading ? "Enviando..." : "Enviar"}
-              </button>
+              </Boton>
             </form>
           </div>
         </div>

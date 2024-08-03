@@ -3,29 +3,21 @@ import Image from "next/image";
 
 import { PiArrowCircleLeftDuotone } from "react-icons/pi";
 
+import { HeaderProyecto } from "@/components/ui";
+
 function CatalogoMarcablanca() {
   return (
     <div className="mx-auto">
-      <div className="flex flex-grow mb-6 gap-x-6 items-center border rounded">
-        <div>
-          <Image src="/imagenes/marcablanca-celular.jpg" alt="" width={300} height={700} />
-        </div>
-        <div className="p-4">
-          <h6>React.js, Bootstrap, Figma</h6>
-          <h1 className="mb-6 text-slate-400">
-            App Web: <span className="text-white">Catálogo Marca Blanca</span>
-          </h1>
-          <div className="flex">
-            <p>
-              <strong>Estado:</strong> En prueba
-            </p>
-            <div className="bg-yellow-300 w-3 h-3 rounded-xl mt-1 ms-1.5"></div>
-          </div>
-          <Link href="https://marcablanca-catalog-front.vercel.app/">
-            <button>Ir al sitio</button>
-          </Link>
-        </div>
-      </div>
+      <HeaderProyecto
+        herramientas="React.js, Bootstrap, Figma"
+        titulo="App Web: Catálogo Marca Blanca"
+        estado="En prueba"
+        color="yellow"
+        link="https://marcablanca-catalog-front.vercel.app/"
+      >
+        <Image src="/imagenes/marcablanca-celular.jpg" alt="" width={300} height={700} className="rounded-s-md" />
+      </HeaderProyecto>
+
       <p>
         Actualmente en proceso de desarrollo, realizado con mi amigo y colega <strong>Facundo Romano</strong> a cargo de
         su back-end desarrollado en <strong>Node.js (Express, Prisma) y mySql</strong>, mientras que yo estoy en el{" "}

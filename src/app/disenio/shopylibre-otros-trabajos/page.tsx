@@ -3,28 +3,20 @@ import Link from "next/link";
 
 import { PiArrowCircleLeftDuotone } from "react-icons/pi";
 
+import { HeaderProyecto } from "@/components/ui";
+
 function ShopyLibreTrabajos() {
   return (
     <div className="mx-auto">
-      <div className="flex flex-grow mb-6 gap-x-6 items-center border rounded">
-        <div>
-          <Image src="/imagenes/shopylibre-foto-balsamo.png" alt="" width={300} height={700} />
-        </div>
-        <div className="p-4">
-          <h6>Adobe Illustrator, Adobe Photoshop</h6>
-          <h1 className="mb-6 text-slate-400">
-            ShopyLibre: <span className="text-white">Otros Trabajos</span>
-          </h1>
-          <ul>
-            <li className="mb-1">
-              <strong>Cliente:</strong> Shopy Libre (Chile)
-            </li>
-            <li className="mb-1">
-              <strong>Estado:</strong> Finalizado
-            </li>
-          </ul>
-        </div>
-      </div>
+      <HeaderProyecto
+        herramientas="Adobe Illustrator, Adobe Photoshop"
+        titulo="ShopyLibre: Otros Proyectos"
+        estado="Finalizado"
+        color=""
+        link=""
+      >
+        <Image src="/imagenes/shopylibre-foto-balsamo.png" alt="" width={300} height={700} className="rounded-s-md" />
+      </HeaderProyecto>
       <p>
         En 2022, a través de la plataforma Upwork, comenzamos una relación comercial con la empresa importadora{" "}
         <strong>ShopyLibre</strong> de Chile. A lo largo del tiempo, ShopyLibre me ha solicitado diversos trabajos de

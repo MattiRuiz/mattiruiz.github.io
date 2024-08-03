@@ -4,29 +4,21 @@ import Link from "next/link";
 
 import { PiArrowCircleLeftDuotone } from "react-icons/pi";
 
+import { HeaderProyecto } from "@/components/ui";
+
 function MedanosPatagonia() {
   return (
     <div className="mx-auto">
-      <div className="flex flex-grow mb-6 gap-x-6 items-center border rounded">
-        <div>
-          <Image src="/imagenes/medanos-celular.jpg" alt="" width={420} height={700} />
-        </div>
-        <div className="p-4">
-          <h6>Wordpress</h6>
-          <h1 className="mb-6 text-slate-400">
-            Rediseño y administración del sitio de booking: <span className="text-white">Medanos Patagonia</span>
-          </h1>
-          <div className="flex">
-            <p>
-              <strong>Estado:</strong> Activo
-            </p>
-            <div className="bg-green-500 w-3 h-3 rounded-xl mt-1 ms-1.5"></div>
-          </div>
-          <Link href="https://medanospatagonia.com/">
-            <button>Ir al sitio</button>
-          </Link>
-        </div>
-      </div>
+      <HeaderProyecto
+        herramientas="Wordpress"
+        titulo="Rediseño y administración del sitio de booking: Medanos Patagonia"
+        estado="Activo"
+        color="green"
+        link="https://medanospatagonia.com/"
+      >
+        <Image src="/imagenes/medanos-celular.jpg" alt="" width={420} height={700} className="rounded-s-md" />
+      </HeaderProyecto>
+
       <p>
         El trabajo se realizó entre octubre de 2023 y mayo de 2024. El encargado del sitio se puso en contacto para
         resolver problemas de comunicación que afectaban al sistema: muchos usuarios no lograban completar sus reservas
