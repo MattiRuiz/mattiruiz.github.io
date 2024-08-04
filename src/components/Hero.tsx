@@ -30,9 +30,13 @@ export function Hero() {
           <p>
             Hola, soy <span className="bg-white text-slate-900 font-bold px-2 py-1 ms-1">Matias Ruiz</span>
           </p>
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-1">Lic. en Diseño Gráfico</h2>
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-1">Tec. en Programación</h2>
-          <p className="mt-4 text-xl text-gray-300 mb-0">
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-2 leading-none">
+            Lic. en Diseño Gráfico
+          </h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-2 leading-none">
+            Tec. en Programación
+          </h2>
+          <p className="mt-3 text-xl text-gray-300 mb-0">
             ¡Sean <strong>Bienvenidos</strong> a mi porfolio!
           </p>
         </div>

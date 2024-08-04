@@ -80,7 +80,7 @@ export function Proyectos() {
         <div className="w-full h-px bg-white opacity-30 absolute bottom-0 right-0"></div>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
         {proyectos
           .filter((item) => item.especialidad === categoria)
           .map((item, index) => (

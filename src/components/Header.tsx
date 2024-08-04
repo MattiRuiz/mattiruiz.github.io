@@ -30,8 +30,8 @@ export function Header() {
       <div className="col-span-2 md:col-span-1">
         <ul className={`${estadoMenu} md:flex gap-x-5 gap-y-3 mt-3 md:mt-0 justify-end flex-col md:flex-row items-end`}>
           <li>
-            <Link href="/#sobre-mi" className="py-2 text-white hover:text-slate-300 font-semibold tracking-normal">
-              Sobre mi
+            <Link href="/#habilidades" className="py-2 text-white hover:text-slate-300 font-semibold tracking-normal">
+              Habilidades
             </Link>
           </li>
           <li>

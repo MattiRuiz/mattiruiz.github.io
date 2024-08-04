@@ -50,11 +50,11 @@ export default function Home() {
           <PiBracketsCurlyDuotone />
         </CardEspecialidades>
       </div>
-      <div className="pt-3">
+      <div className="pt-4 pb-5" id="habilidades">
         <h2 className="mb-2">Mis habilidades</h2>
         <Habilidades />
       </div>
-      <div className="pt-10" id="mis-proyectos">
+      <div className="pt-4" id="mis-proyectos">
         <h2 className="mb-2">Mis proyectos</h2>
         <Proyectos />
       </div>
