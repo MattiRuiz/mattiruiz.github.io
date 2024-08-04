@@ -69,9 +69,9 @@ export function BloqueContacto() {
 
   return (
     <>
-      <div className="bg-slate-800 border border-slate-700 px-10 py-8 my-6 rounded-md shadow" id="contacto">
-        <div className="sm:flex inline-block flex-row justify-center gap-x-4">
-          <div className="sm:basis-2/5 w-full mb-4">
+      <div className="bg-slate-800 border border-slate-700 px-6 sm:px-10 py-8 my-6 rounded-md shadow" id="contacto">
+        <div className="sm:flex inline-block flex-row justify-center gap-x-6">
+          <div className="sm:basis-2/5 w-full mb-6">
             <div className="mb-6">
               <Link href="/">
                 <h1 className="text-3xl">
@@ -100,9 +100,9 @@ export function BloqueContacto() {
             </Link>
           </div>
           <div className="basis-3/5">
-            <h3>Enviame un mensaje</h3>
-            <p>Rellena el formulario y te responderé a la brevedad.</p>
-            <form ref={form} onSubmit={sendEmail} className="w-4/5">
+            <h3 className="mb-2">Enviame un mensaje</h3>
+            <p className="leading-snug">Rellena el formulario y te responderé a la brevedad.</p>
+            <form ref={form} onSubmit={sendEmail} className="md:w-4/5">
               <Input type="text" placeholder="Nombre" name="user_name" />
               <Input type="email" placeholder="Email" name="user_email" />
               <Input type="number" placeholder="Celular" name="user_phone" />
