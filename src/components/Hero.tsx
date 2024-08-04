@@ -32,7 +32,7 @@ export function Hero() {
           </p>
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-1">Lic. en Diseño Gráfico</h2>
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-1">Tec. en Programación</h2>
-          <p className="mt-4 text-xl leading-8 text-gray-300">
+          <p className="mt-4 text-xl text-gray-300 mb-0">
             ¡Sean <strong>Bienvenidos</strong> a mi porfolio!
           </p>
         </div>

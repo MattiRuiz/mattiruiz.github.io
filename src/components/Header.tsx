@@ -16,7 +16,7 @@ export function Header() {
   };
 
   return (
-    <div className="container mx-auto py-3 mb-4 grid grid-cols-2">
+    <div className="container mx-auto py-3 mb-2 grid grid-cols-2">
       <Link href="/">
         <h1 className="text-xl text-slate-100 hover:text-slate-300 tracking-normal">
           MRuiz | <span className="text-slate-500 font-semibold ">Porfolio</span>
