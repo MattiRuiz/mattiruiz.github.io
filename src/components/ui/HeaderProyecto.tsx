@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import Link from "next/link";
-import { Boton } from "./";
 
 import { PiArrowCircleRightDuotone } from "react-icons/pi";
 
@@ -15,8 +14,10 @@ interface Props {
 
 export function HeaderProyecto({ herramientas, titulo, estado, color, link, children }: Props) {
   return (
-    <div className="flex flex-grow mb-6 gap-x-6 items-center border  border-slate-700 rounded-md">
-      <div>{children}</div>
+    <div className="block sm:flex flex-grow mb-6 gap-x-6 items-center border  border-slate-700 rounded-md">
+      <div className="max-h-72 sm:max-h-max overflow-hidden rounded-t-md sm:rounded-none lg:rounded-s-md">
+        {children}
+      </div>
       <div className="p-4">
         <h6 className="text-slate-400 mb-2 font-semibold">{herramientas}</h6>
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-3">{titulo}</h1>

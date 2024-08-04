@@ -15,7 +15,7 @@ function CatalogoMarcablanca() {
         color="yellow"
         link="https://marcablanca-catalog-front.vercel.app/"
       >
-        <Image src="/imagenes/marcablanca-celular.jpg" alt="" width={300} height={700} className="rounded-s-md" />
+        <Image src="/imagenes/marcablanca-celular.jpg" alt="" width={300} height={700} />
       </HeaderProyecto>
 
       <p>

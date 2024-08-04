@@ -15,7 +15,7 @@ function ShopyLibreTrabajos() {
         color=""
         link=""
       >
-        <Image src="/imagenes/shopylibre-foto-balsamo.png" alt="" width={300} height={700} className="rounded-s-md" />
+        <Image src="/imagenes/shopylibre-foto-balsamo.png" alt="" width={300} height={700} />
       </HeaderProyecto>
       <p>
         En 2022, a través de la plataforma Upwork, comenzamos una relación comercial con la empresa importadora{" "}

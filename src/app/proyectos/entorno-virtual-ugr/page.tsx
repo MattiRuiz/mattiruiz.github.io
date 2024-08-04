@@ -15,7 +15,7 @@ function UGRVirtual() {
         color="green"
         link="https://virtual.ugr.edu.ar/"
       >
-        <Image src="/imagenes/ugr-celular.jpg" alt="" width={400} height={700} className="rounded-s-md" />
+        <Image src="/imagenes/ugr-celular.jpg" alt="" width={400} height={700} />
       </HeaderProyecto>
       <p>
         La{" "}

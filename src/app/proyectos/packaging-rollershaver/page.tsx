@@ -15,7 +15,7 @@ function PackagingRollerShaver() {
         color=""
         link=""
       >
-        <Image src="/imagenes/afeitadora-muckup.png" alt="" width={300} height={700} className="rounded-s-md" />
+        <Image src="/imagenes/afeitadora-muckup.png" alt="" width={300} height={700} />
       </HeaderProyecto>
 
       <p>

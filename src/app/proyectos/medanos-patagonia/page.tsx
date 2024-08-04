@@ -16,7 +16,7 @@ function MedanosPatagonia() {
         color="green"
         link="https://medanospatagonia.com/"
       >
-        <Image src="/imagenes/medanos-celular.jpg" alt="" width={420} height={700} className="rounded-s-md" />
+        <Image src="/imagenes/medanos-celular.jpg" alt="" width={420} height={700} />
       </HeaderProyecto>
 
       <p>

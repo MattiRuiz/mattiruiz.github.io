@@ -15,7 +15,7 @@ function Powerpoint() {
         color=""
         link=""
       >
-        <Image src="/imagenes/presentacion-miniatura.jpg" alt="" width={300} height={700} className="rounded-s-md" />
+        <Image src="/imagenes/presentacion-miniatura.jpg" alt="" width={300} height={700} />
       </HeaderProyecto>
 
       <p>
