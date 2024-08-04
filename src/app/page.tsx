@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <div className="pb-4 mt-6 text-center w-full md:w-3/4 mx-auto" id="sobre-mi">
         <TituloHome>Sobre mi</TituloHome>
-        <p className="text-sm sm:text-base">
+        <p className="">
           ¡Hola! Me llamo <strong>Matias</strong>, tengo 33 años y vivo en Rosario, Argentina. En el año 2019 me recibí
           de Licenciado en Diseño Gráfico en la <em>Universidad Abierta Interamericana</em> y en el 2023 de Técnico
           Universitario en Programación en la <em>Universidad Tecnológica de Rosario</em>. A partir del 2020 he tenido
@@ -20,7 +20,7 @@ export default function Home() {
           </a>{" "}
           los mas antiguos.
         </p>
-        <p className="text-sm sm:text-base">
+        <p className="">
           Actualmente me encuentro trabajando de profesor de la materia "Tipografía y Entorno Digital" en la{" "}
           <em>Universidad del Gran Rosario</em>.
         </p>
