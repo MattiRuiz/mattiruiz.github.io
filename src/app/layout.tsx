@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 
-import BloqueContacto from "../components/BloqueContacto";
+import { BloqueContacto, Header } from "../components";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +23,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${inter.className} container mx-auto px-6`}>
-        <div className="container mx-auto py-3 flex flex-row justify-between mb-6">
+        <Header />
+        {/* <div className="container mx-auto py-3 flex flex-row justify-between mb-6">
           <Link href="/">
             <h1 className="text-xl text-slate-100 hover:text-slate-300 tracking-normal">
               MRuiz | <span className="text-slate-500 font-semibold ">Porfolio</span>
@@ -57,7 +58,7 @@ export default function RootLayout({
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         {children}
         <BloqueContacto />
       </body>

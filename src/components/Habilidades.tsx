@@ -26,7 +26,7 @@ export function Habilidades() {
         <h4 className="font-bold">
           Programación: <span className="font-normal">Avanzado</span>
         </h4>
-        <div className="mx-auto mt-3 mb-6 grid max-w-lg grid-cols-4 items-center gap-x-6 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-6">
+        <div className="mx-auto mt-3 mb-6 grid max-w-lg grid-cols-4 items-center gap-x-6 gap-y-6 sm:max-w-xl sm:grid-cols-6 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-6">
           <CardHabilidad nombre="HTML">
             <SiHtml5 className="text-4xl text-orange-500 mb-0.5" />
           </CardHabilidad>
@@ -48,7 +48,7 @@ export function Habilidades() {
         <h4 className="font-bold">
           Programación: <span className="font-normal">Intermedio</span>
         </h4>
-        <div className="mx-auto mt-3 mb-6 grid max-w-lg grid-cols-4 items-center gap-x-6 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-6">
+        <div className="mx-auto mt-3 mb-6 grid max-w-lg grid-cols-4 items-center gap-x-6 gap-y-6 sm:max-w-xl sm:grid-cols-6 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-6">
           <CardHabilidad nombre="Node.js">
             <SiNodedotjs className="text-4xl text-green-500 mb-0.5" />
           </CardHabilidad>
@@ -71,7 +71,7 @@ export function Habilidades() {
       </div>
       <div className="mx-auto max-w-7xl">
         <h4 className="font-bold">Diseño:</h4>
-        <div className="mx-auto mt-3 mb-6 grid max-w-lg grid-cols-4 items-center gap-x-6 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-6">
+        <div className="mx-auto mt-3 mb-6 grid max-w-lg grid-cols-4 items-center gap-x-6 gap-y-6 sm:max-w-xl sm:grid-cols-6 sm:gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-6">
           <CardHabilidad nombre="Figma">
             <SiFigma className="text-4xl text-red-500 mb-0.5" />
           </CardHabilidad>
