@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import { Proyectos, Habilidades, Hero } from "../components";
-import { TituloHome } from "../components/ui";
+import { TituloHome, CardEspecialidades } from "../components/ui";
+
+import { PiBezierCurveDuotone, PiAppWindowDuotone, PiBracketsCurlyDuotone } from "react-icons/pi";
 
 export default function Home() {
   return (
@@ -28,23 +30,26 @@ export default function Home() {
           <div className="w-3 h-3 rounded-full bg-white"></div>
         </div>
       </div>
-      <div className=" text-center py-5 mb-6 mt-6 bg-slate-800 border border-slate-700 rounded-md">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 divide-y md:divide-x md:divide-y-0 divide-dotted divide-slate-500">
-          <div className="px-6 py-4">
-            <p className="text-xl font-bold mb-2">Diseño de Comunicación Visual</p>
-            <p className="mb-0">Comunicación institucional, diseño editorial, diseño de plantillas.</p>
-          </div>
-          <div className="px-6 py-4">
-            <p className="text-xl font-bold mb-2">Diseño de Interfaces</p>
-            <p className="mb-0">Creación de maquetas, análisis de webs, modificaciones, adaptaciones.</p>
-          </div>
-          <div className="px-6 py-4">
-            <p className="text-xl font-bold mb-2">Programación</p>
-            <p className="mb-0">Con conocimientos en varios lenguajes y facilidad de aprendizaje.</p>
-          </div>
-        </div>
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 my-6">
+        <CardEspecialidades
+          nombre="Diseño de Comunicación Visual"
+          descripcion="Comunicación institucional, diseño editorial, diseño de plantillas."
+        >
+          <PiBezierCurveDuotone />
+        </CardEspecialidades>
+        <CardEspecialidades
+          nombre="Diseño de Interfaces"
+          descripcion="Creación de maquetas, análisis visuales, testeo de uso."
+        >
+          <PiAppWindowDuotone />
+        </CardEspecialidades>
+        <CardEspecialidades
+          nombre="Desarrollador"
+          descripcion="Front-end avanzado, Back-end, APIrest y Base de datos intermedio. Facilidad de aprendizaje."
+        >
+          <PiBracketsCurlyDuotone />
+        </CardEspecialidades>
       </div>
-
       <div className="pt-3">
         <h2 className="mb-2">Mis habilidades</h2>
         <Habilidades />
