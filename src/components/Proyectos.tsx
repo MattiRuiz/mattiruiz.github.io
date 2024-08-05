@@ -1,7 +1,11 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 import CardProyecto from "./CardProyecto";
+import { TituloHome } from "@/components/ui";
+
+import { SiGithub, SiBehance } from "react-icons/si";
 
 const data = [
   {
@@ -92,6 +96,22 @@ export function Proyectos() {
               link={item.link}
             />
           ))}
+      </div>
+      <div className=" mt-4">
+        <TituloHome>Para ver más...</TituloHome>
+        <div className="flex justify-center gap-4">
+          <Link href="https://github.com/MattiRuiz" target="_blank">
+            <button className="flex items-center rounded-md px-3 py-2 leading-tight bg-slate-200 text-slate-800 hover:bg-slate-300">
+              <SiGithub className="me-2 text-2xl " /> Ir a mis repositorios de GitHub
+            </button>
+          </Link>
+          <Link href="https://www.behance.net/matias-ruiz" target="_blank">
+            <button className="flex items-center rounded-md px-3 py-2 leading-tight bg-slate-200 text-slate-800 hover:bg-slate-300">
+              <SiBehance className="me-2 text-2xl " />
+              Ver diseños anteriores en Behance
+            </button>
+          </Link>
+        </div>
       </div>
     </>
   );
