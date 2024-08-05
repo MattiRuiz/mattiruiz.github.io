@@ -33,26 +33,34 @@ function UGRVirtual() {
         los espaciados y los estilos de los componentes, respetando las limitaciones del propio Moodle.
       </p>
       <p>
-        Al no poder ingresar sin tener una cuenta de alumno voy a incluir varias imagenes para explicar algunas de los
-        cambios gráficos aplicados.
+        Dado que no puedo proporcionar acceso directo sin una cuenta de alumno, voy a incluir varias imagenes para
+        explicar algunas de los decisiones visuales aplicadas. Estas imágenes mostrarán las mejoras en la navegación, la
+        legibilidad y la estética general de la plataforma.
       </p>
       <div className="mt-8">
         <TituloHome>Antes y después</TituloHome>
       </div>
       <h5>Header</h5>
       <p>
-        Se creó un logo más vinculado a la imagen institucional actual. A su vez se unificaron las barras (de 3 a 2) y
-        se dejaron unicamente los accesos que tienen una utilidad para los alumnos y los profesores.
+        El logo del header no respondía a la imagen institucional, por lo que se creó una variable adaptada al entorno
+        virtual.
+      </p>
+      <p>
+        Se unificaron las barras de navegación de 3 a 2, dejando únicamente los accesos y las funcionalidades relevantes
+        tanto para alumnos como para profesores.
       </p>
       <Image src="/imagenes/ugr-header-antes.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
       <Image src="/imagenes/ugr-header-despues.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
 
       <h5 className="mt-8">Footer</h5>
       <p>
-        En el footer se agregó un logo con un atajo a la home, y se administraron mejor los espacios entre elementos y
-        dandoles jerarquías para organizar mejor la información. También se utilizaron iconografía en los elementos de
-        lista para facilitar su lectura. A su vez se le aplicó diseño responsivo ya que en dispositivos celulares este
-        footer no se mostraba.
+        Se agregó el logo con un atajo a la página de inicio. Se administraron mejor los espacios entre elementos,
+        dándoles jerarquías claras para organizar mejor la información y se utilizaron íconos para facilitar su lectura
+        rápida.
+      </p>
+      <p>
+        Además, se implementó un diseño responsivo para que el footer se muestre adecuadamente en dispositivos móviles,
+        ya que anteriormente lo ocultaban.
       </p>
       <div className="inline md:flex gap-x-4 flex-row">
         <div className="basis-1/2">
@@ -65,9 +73,9 @@ function UGRVirtual() {
 
       <h5 className="mt-8">Portada</h5>
       <p>
-        Se quitaron accesos directos que sólo servían para administradores y moderadores. Los accesos generales se
-        colocaron en un menú desplegable y las imagenes publicitarias se limitaron a un carrusel (ya que se utilizaba
-        las mismas que en Instagram). Se les dió prioridad a los accesos a las aulas matriculadas.
+        Se eliminaron accesos directos que solo servían para administradores y moderadores. Los accesos generales se
+        colocaron en un menú desplegable y las imagenes publicitarias se limitaron a un carrusel (anteriormente se
+        utilizaban las mismas imágenes que en Instagram). Se dio prioridad a los accesos a las aulas matriculadas.
       </p>
       <div className="inline md:flex gap-x-4 flex-row">
         <div className="basis-1/2">
@@ -79,9 +87,9 @@ function UGRVirtual() {
       </div>
       <h5 className="mt-8">Chat</h5>
       <p>
-        Se unificaron los criterios visuales a la paleta de estilo. En el chat general se pudo colocar el input de
-        busqueda y las otras opciones en una sola línea. En cuanto al interior del mensaje se quitó el nombre y el
-        avatar de cada mensaje para evitar la redundancia.
+        Se unificaron los criterios visuales con la paleta de estilo. En el chat general se pudo colocar el input de
+        búsqueda y las otras opciones en una sola línea. En el interior del mensaje se eliminó el nombre y el avatar de
+        cada mensaje para evitar la redundancia de información.
       </p>
       <div className="flex gap-x-4 flex-row">
         <div className="basis-1/4">

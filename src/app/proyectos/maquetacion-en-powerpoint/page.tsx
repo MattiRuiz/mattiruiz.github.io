@@ -17,9 +17,13 @@ function Powerpoint() {
       </HeaderProyecto>
 
       <p>
-        Este proyecto consistió en el diseño y maquetación de 28 diapositivas para una presentación profesional,
-        realizado a través de la plataforma <strong>Upwork</strong> entre el 4 y el 6 de marzo de 2022. A continuación
-        de la presentación se utilizarán algunas diapositivas para explicar algunas de las desiciones tomadas.
+        Este proyecto consistió en el diseño y la maquetación de 28 diapositivas para una presentación profesional.
+        Realizado a través de la plataforma <strong>Upwork</strong> en marzo de 2022, el objetivo fue utilizar los
+        bocetos del cliente para crear una presentación visualmente atractiva y coherente.
+      </p>
+      <p>
+        A continuación de la presentación, elegí varias de las diapositivas para explicar algunas de las decisiones
+        visuales tomadas durante el proyecto.
       </p>
       <div className="flex justify-center mt-6">
         <iframe
@@ -35,10 +39,10 @@ function Powerpoint() {
           Diapositiva 01: <span className="font-normal">Tipografía</span>
         </h4>
         <p>
-          Con la premisa de un estilo minimalista y limpio, se seleccionaron las fuentes <strong>Roboto</strong> para
-          texto en bloque y <strong>Roboto Slab</strong> para titulares. Se utilizaron elementos decorativos para las
-          diapositivas más sencillas o de transición que el cambio de color junto con la interpolación entre
-          diapositivas le da un toque atractivo.
+          Para lograr un estilo minimalista y limpio, se seleccionaron las fuentes <strong>Roboto</strong> para el texto
+          en bloque y <strong>Roboto Slab</strong> para los titulares. En las diapositivas más sencillas o de
+          transición, se utilizaron elementos decorativos y cambios de color, junto con la interpolación entre
+          diapositivas, para añadir un toque atractivo y mantener el interés visual.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
@@ -53,7 +57,8 @@ function Powerpoint() {
           Diapositiva 02: <span className="font-normal">Colores</span>
         </h4>
         <p>
-          También se eligió una paleta de colores adecuada para los diferentes tipos de gráficos y cuadros requeridos.
+          Para maximizar la legibilidad se utilizó un fondo blanco con texto en gris oscuro. Además se eligió una paleta
+          de varios colores que permitió adecuarse a los diferentes tipos de gráficos y cuadros requeridos.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
@@ -67,7 +72,11 @@ function Powerpoint() {
         <h4 className="mb-1 mt-10">
           Diapositiva 03: <span className="font-normal">Recursos</span>
         </h4>
-        <p>Se utilizaron diferentes componentes visuales para apoyar el mensaje que se quiere comunicar.</p>
+        <p>
+          Se incorporaron diversos componentes visuales para apoyar y reforzar el mensaje que se quería comunicar. Esto
+          incluyó iconografía, imágenes y diagramas que complementan el contenido textual y mejoran la comprensión del
+          mensaje.
+        </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/03-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -80,7 +89,11 @@ function Powerpoint() {
         <h4 className="mb-1 mt-10">
           Diapositiva 04: <span className="font-normal">Simplificación</span>
         </h4>
-        <p>Se modificaron los recursos para que el mensaje sea claro y entendible.</p>
+        <p>
+          Se modificaron los recursos visuales para que el mensaje fuera claro y entendible. Esto incluyó la eliminación
+          de elementos innecesarios y la simplificación de gráficos y textos para garantizar una comunicación efectiva y
+          directa.
+        </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/04-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -93,7 +106,11 @@ function Powerpoint() {
         <h4 className="mb-1 mt-10">
           Diapositiva 05: <span className="font-normal">Adaptación</span>
         </h4>
-        <p>Adaptación de las gráficos requeridos a las paletas de colores y tipográficas seleccionadas.</p>
+        <p>
+          Se adaptaron los gráficos requeridos a la paleta de colores y las tipografías seleccionadas, asegurando que
+          todos los elementos visuales mantuvieran una coherencia estilística y fueran fácilmente identificables dentro
+          del diseño general de la presentación.
+        </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/05-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -107,8 +124,9 @@ function Powerpoint() {
           Otras diapositivas: <span className="font-normal">Destacadas</span>
         </h4>
         <p>
-          Algunas diapositivas seleccionadas, cómo las que contienen ejercicios, tienen un fondo gris para aprovechar el
-          contraste con blanco para generar recuadros destacados.
+          Algunas diapositivas seleccionadas, como las que contienen ejercicios, se diseñaron con un fondo gris. Este
+          fondo se utilizó para aprovechar el contraste con el blanco, generando recuadros destacados que dirigen la
+          atención del espectador hacia los elementos importantes.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">

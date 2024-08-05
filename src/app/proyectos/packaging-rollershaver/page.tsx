@@ -17,13 +17,14 @@ function PackagingRollerShaver() {
       </HeaderProyecto>
 
       <p>
-        Mediante la plataforma Upwork en el año 2022 comenzamos una relación comercial con la empresa importadora{" "}
-        <strong>ShopyLibre</strong> de Chile quienes me fueron solicitando varios trabajos de packaging. El primero de
-        estos fue esta afeitadora: la <strong>RollerShaver</strong>.
+        En 2022, a través de la plataforma Upwork, inicié una relación comercial con la empresa importadora{" "}
+        <strong>ShopyLibre</strong> de Chile. A partir de entonces, me encargaron varios proyectos de packaging, siendo
+        el primero de ellos la <strong>RollerShaver</strong>.
       </p>
       <p>
-        Al ser mi primer trabajo profesional de packaging fue todo una pendiente de aprendizaje pero por suerte la buena
-        onda y excelente comunicación de la empresa permitió que el diseño salga de manera orgánica y en poco tiempo.
+        Al ser mi primer trabajo profesional de packaging, supuso un gran desafío y una valiosa oportunidad de
+        aprendizaje. Afortunadamente, la buena onda y excelente comunicación con la empresa permitieron que el diseño se
+        desarrolle de manera orgánica y en un corto período de tiempo.
       </p>
       <Image src="/imagenes/rollerShaver02.png" alt="" width={1200} height={900} className="mt-6" />
     </LayoutProyecto>

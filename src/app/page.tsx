@@ -12,18 +12,22 @@ export default function Home() {
       <div className="pb-4 mt-6 text-center w-full md:w-3/4 mx-auto" id="sobre-mi">
         <TituloHome>Sobre mi</TituloHome>
         <p className="">
-          ¡Hola! Me llamo <strong>Matias</strong>, tengo 33 años y vivo en Rosario, Argentina. En el año 2019 me recibí
-          de Licenciado en Diseño Gráfico en la <em>Universidad Abierta Interamericana</em> y en el 2023 de Técnico
-          Universitario en Programación en la <em>Universidad Tecnológica de Rosario</em>. A partir del 2020 he tenido
-          variados tipos de trabajos relacionados al diseño, la mayoría en la modalidad <em>freelance</em>, los cuales
-          se encuentran expuestos en la sección de abajo, los más actuales, y en{" "}
-          <a href="https://www.behance.net/matias-ruiz" className="font-bold text-white">
+          ¡Hola! Soy <strong>Matias</strong>, tengo 33 años y vivo en Rosario, Argentina. Me gradué como Licenciado en
+          Diseño Gráfico en 2019 en la <em>Universidad Abierta Interamericana</em> y en el 2023 de Técnico Universitario
+          en Programación en la <em>Universidad Tecnológica de Rosario</em>. Desde 2020, he trabajado en una variedad de
+          proyectos de diseño y programación, principalmente en la modalidad <em>freelance</em>, los cuales se
+          encuentran expuestos en la sección de abajo y en mis perfiles de{" "}
+          <a href="https://www.behance.net/matias-ruiz" target="_blank">
             Behance
           </a>{" "}
-          los mas antiguos.
+          y{" "}
+          <a href="https://github.com/MattiRuiz" target="_blank">
+            GitHub
+          </a>
+          .
         </p>
         <p className="">
-          Actualmente me encuentro trabajando de profesor de la materia "Tipografía y Entorno Digital" en la{" "}
+          Actualmente, soy profesor de la materia "Tipografía y Entorno Digital" en la{" "}
           <em>Universidad del Gran Rosario</em>.
         </p>
         <div className="w-1/4 h-px bg-white opacity-75 mx-auto mt-8 flex justify-center items-center">

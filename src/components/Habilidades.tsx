@@ -90,10 +90,12 @@ export function Habilidades() {
         </div>
       </div>
       <div className="w-full mx-auto">
-        <p className="mb-0">
-          <strong>Otras habilidades:</strong> Comerciales (12 años en atención al cliente), enseñanza (1,5 años de
-          profesor universitario), Inglés (nivel intermedio). Implementación de metodologías ágiles. Especialización en
-          Tipografía y Ortotipografía. Ordenado y autodidacta. Aprendo fácilmente.
+        <h4 className="font-bold">Otras habilidades:</h4>
+        <p>
+          <strong>Comerciales:</strong> 12 años como empleado de comercio / encargado. <strong>Enseñanza:</strong> 1,5
+          año como profesor universitario y 2 años como ayudante de cátedra. <strong>Inglés:</strong> Nivel intermedio.{" "}
+          <strong>Tipografía:</strong> Conocimientos avanzados en Tipografía y Ortotipografía.{" "}
+          <strong>Metodologías de trabajo:</strong> Experiencia en Metodologías Ágiles.
         </p>
       </div>
     </div>
