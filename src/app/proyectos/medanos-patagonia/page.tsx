@@ -1,14 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import Link from "next/link";
 
-import { PiArrowCircleLeftDuotone } from "react-icons/pi";
-
+import LayoutProyecto from "../LayoutProyecto";
 import { HeaderProyecto } from "@/components/ui";
 
 function MedanosPatagonia() {
   return (
-    <div className="mx-auto">
+    <LayoutProyecto>
       <HeaderProyecto
         herramientas="Wordpress"
         titulo="Rediseño y administración del sitio de booking: Medanos Patagonia"
@@ -50,13 +48,7 @@ function MedanosPatagonia() {
         comparando un servidor local con los plugins instalados y el servidor en línea, aplicando los cambios necesarios
         y erradicando finalmente el problema de virus.
       </p>
-      <div className="mt-6">
-        <Link href="/" className="flex items-center">
-          <PiArrowCircleLeftDuotone className="mt-0.5 text-lg" />
-          <p className="mb-0 ms-2">Volver</p>
-        </Link>
-      </div>
-    </div>
+    </LayoutProyecto>
   );
 }
 

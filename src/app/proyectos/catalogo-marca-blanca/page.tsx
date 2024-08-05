@@ -1,13 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 
-import { PiArrowCircleLeftDuotone } from "react-icons/pi";
-
+import LayoutProyecto from "../LayoutProyecto";
 import { HeaderProyecto } from "@/components/ui";
 
 function CatalogoMarcablanca() {
   return (
-    <div className="mx-auto">
+    <LayoutProyecto>
       <HeaderProyecto
         herramientas="React.js, Bootstrap, Figma"
         titulo="App Web: Catálogo Marca Blanca"
@@ -30,13 +28,7 @@ function CatalogoMarcablanca() {
         reventa.
       </p>
       <Image src="/imagenes/marcablanca-home.jpg" alt="" width={1200} height={500} className="w-full mb-2 mt-6" />
-      <div className="mt-6">
-        <Link href="/" className="flex items-center">
-          <PiArrowCircleLeftDuotone className="mt-0.5 text-lg" />
-          <p className="mb-0 ms-2">Volver</p>
-        </Link>
-      </div>
-    </div>
+    </LayoutProyecto>
   );
 }
 

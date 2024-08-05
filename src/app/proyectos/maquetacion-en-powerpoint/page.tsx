@@ -1,13 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 
-import { PiArrowCircleLeftDuotone } from "react-icons/pi";
-
-import { HeaderProyecto } from "@/components/ui";
+import LayoutProyecto from "../LayoutProyecto";
+import { HeaderProyecto, TituloHome } from "@/components/ui";
 
 function Powerpoint() {
   return (
-    <div className="mx-auto">
+    <LayoutProyecto>
       <HeaderProyecto
         herramientas="Microsoft PowerPoint"
         titulo="Diseño y Maquetación de Presentación Profesional"
@@ -31,10 +29,17 @@ function Powerpoint() {
           allowFullScreen={true}
         ></iframe>
       </div>
-      <div className="bg-slate-200 p-6 text-slate-950 rounded my-6">
-        <h4 className="mb-3">
+      <div className="mt-10">
+        <TituloHome>Descripción</TituloHome>
+        <h4 className="mb-1">
           Diapositiva 01: <span className="font-normal">Tipografía</span>
         </h4>
+        <p>
+          Con la premisa de un estilo minimalista y limpio, se seleccionaron las fuentes <strong>Roboto</strong> para
+          texto en bloque y <strong>Roboto Slab</strong> para titulares. Se utilizaron elementos decorativos para las
+          diapositivas más sencillas o de transición que el cambio de color junto con la interpolación entre
+          diapositivas le da un toque atractivo.
+        </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/01-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -43,15 +48,13 @@ function Powerpoint() {
             <Image src="/imagenes/01-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
           </div>
         </div>
-        <p>
-          Con la premisa de un estilo minimalista y limpio, se seleccionaron las fuentes <strong>Roboto</strong> para
-          texto en bloque y <strong>Roboto Slab</strong> para titulares. Se utilizaron elementos decorativos para las
-          diapositivas más sencillas o de transición que el cambio de color junto con la interpolación entre
-          diapositivas le da un toque atractivo.
-        </p>
-        <h4 className="mb-3 mt-10">
+
+        <h4 className="mb-1 mt-10">
           Diapositiva 02: <span className="font-normal">Colores</span>
         </h4>
+        <p>
+          También se eligió una paleta de colores adecuada para los diferentes tipos de gráficos y cuadros requeridos.
+        </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/02-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -60,12 +63,11 @@ function Powerpoint() {
             <Image src="/imagenes/02-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
           </div>
         </div>
-        <p>
-          También se eligió una paleta de colores adecuada para los diferentes tipos de gráficos y cuadros requeridos.
-        </p>
-        <h4 className="mb-3 mt-10">
+
+        <h4 className="mb-1 mt-10">
           Diapositiva 03: <span className="font-normal">Recursos</span>
         </h4>
+        <p>Se utilizaron diferentes componentes visuales para apoyar el mensaje que se quiere comunicar.</p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/03-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -74,10 +76,11 @@ function Powerpoint() {
             <Image src="/imagenes/03-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
           </div>
         </div>
-        <p>Se utilizaron diferentes componentes visuales para apoyar el mensaje que se quiere comunicar.</p>
-        <h4 className="mb-3 mt-10">
+
+        <h4 className="mb-1 mt-10">
           Diapositiva 04: <span className="font-normal">Simplificación</span>
         </h4>
+        <p>Se modificaron los recursos para que el mensaje sea claro y entendible.</p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/04-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -86,11 +89,11 @@ function Powerpoint() {
             <Image src="/imagenes/04-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
           </div>
         </div>
-        <p>Se modificaron los recursos para que el mensaje sea claro y entendible.</p>
 
-        <h4 className="mb-3 mt-10">
+        <h4 className="mb-1 mt-10">
           Diapositiva 05: <span className="font-normal">Adaptación</span>
         </h4>
+        <p>Adaptación de las gráficos requeridos a las paletas de colores y tipográficas seleccionadas.</p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/05-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -99,10 +102,14 @@ function Powerpoint() {
             <Image src="/imagenes/05-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
           </div>
         </div>
-        <p>Adaptación de las gráficos requeridos a las paletas de colores y tipográficas seleccionadas.</p>
-        <h4 className="mb-3 mt-10">
-          Otras diapositivas: <span className="font-normal">Variables</span>
+
+        <h4 className="mb-1 mt-10">
+          Otras diapositivas: <span className="font-normal">Destacadas</span>
         </h4>
+        <p>
+          Algunas diapositivas seleccionadas, cómo las que contienen ejercicios, tienen un fondo gris para aprovechar el
+          contraste con blanco para generar recuadros destacados.
+        </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
             <Image src="/imagenes/23.jpg" alt="" width={500} height={500} className="w-full mb-2" />
@@ -114,18 +121,8 @@ function Powerpoint() {
             <Image src="/imagenes/30.jpg" alt="" width={500} height={500} className="w-full mb-2" />
           </div>
         </div>
-        <p>
-          Algunas diapositivas seleccionadas, cómo las que contienen ejercicios, tienen un fondo gris para aprovechar el
-          contraste con blanco para generar recuadros destacados.
-        </p>
       </div>
-      <div className="mt-6">
-        <Link href="/" className="flex items-center">
-          <PiArrowCircleLeftDuotone className="mt-0.5 text-lg" />
-          <p className="mb-0 ms-2">Volver</p>
-        </Link>
-      </div>
-    </div>
+    </LayoutProyecto>
   );
 }
 

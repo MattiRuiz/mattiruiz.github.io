@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { PiArrowCircleLeftDuotone } from "react-icons/pi";
-
-import { HeaderProyecto } from "@/components/ui";
+import LayoutProyecto from "../LayoutProyecto";
+import { HeaderProyecto, ContenedorProyecto } from "@/components/ui";
 
 function ShopyLibreTrabajos() {
   return (
-    <div className="mx-auto">
+    <LayoutProyecto>
       <HeaderProyecto
         herramientas="Adobe Illustrator, Adobe Photoshop"
         titulo="ShopyLibre: Otros Proyectos"
@@ -24,10 +23,10 @@ function ShopyLibreTrabajos() {
         <Link href="/disenio/packaging-rollershaver">RollerShaver</Link>, para luego realizar el diseño de packaging de
         varios productos que algunos se mostrarán a continuación.
       </p>
-      <div className="bg-slate-200 p-6 text-slate-950 rounded my-6">
-        <h4 className="mb-3">
+      <ContenedorProyecto>
+        <h3 className="mb-3">
           Afeitadora myCOCOS: <span className="font-normal">Rediseño de Packaging</span>
-        </h4>
+        </h3>
         <p>
           <strong>myCOCOS</strong> es una las líneas insignia de la empresa de productos para el cuidado íntimo y ya
           tenía una estética bastante establecida. Luego de un análisis de la web del producto y sus otros productos
@@ -36,7 +35,7 @@ function ShopyLibreTrabajos() {
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <h6 className="mt-6">Modelo Pride de referencia</h6>
+            <h5 className="mt-4 mb-2">Modelo Pride de referencia</h5>
             <Image
               src="/imagenes/shopylibre-afeitadora-antes.jpg"
               alt=""
@@ -46,7 +45,7 @@ function ShopyLibreTrabajos() {
             />
           </div>
           <div className="basis-1/2">
-            <h6 className="mt-6">Diseño entregado</h6>
+            <h5 className="mt-4 mb-2">Diseño entregado</h5>
             <Image
               src="/imagenes/shopylibre-afeitadora-despues.jpg"
               alt=""
@@ -56,11 +55,11 @@ function ShopyLibreTrabajos() {
             />
           </div>
         </div>
-      </div>
-      <div className="bg-slate-200 p-6 text-slate-950 rounded my-6">
-        <h4 className="mb-3">
+      </ContenedorProyecto>
+      <ContenedorProyecto>
+        <h3 className="mb-3">
           Bálsamo After Shave: <span className="font-normal">Tubo de cartón</span>
-        </h4>
+        </h3>
         <p>
           Se me solicitó crear un diseño simple para unos pequeños tubos de cartón que contienen un bálsamo para después
           de afeitarse. Continuando con la paleta de recursos obtenida de la investigación realizada para la afeitadora{" "}
@@ -68,7 +67,7 @@ function ShopyLibreTrabajos() {
         </p>
         <div className="inline lg:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <h6 className="mt-6">Plano con troquelado y ejemplo de diseño</h6>
+            <h5 className="mt-4 mb-2">Plano con troquelado y ejemplo de diseño</h5>
             <Image
               src="/imagenes/shopylibre-carton-ejemplo.jpg"
               alt=""
@@ -78,7 +77,7 @@ function ShopyLibreTrabajos() {
             />
           </div>
           <div className="basis-1/2">
-            <h6 className="mt-6">Diseño final</h6>
+            <h5 className="mt-4 mb-2">Diseño final</h5>
             <Image
               src="/imagenes/shopylibre-carton-final.png"
               alt=""
@@ -88,11 +87,11 @@ function ShopyLibreTrabajos() {
             />
           </div>
         </div>
-      </div>
-      <div className="bg-slate-200 p-6 text-slate-950 rounded my-6">
-        <h4 className="mb-3">
+      </ContenedorProyecto>
+      <ContenedorProyecto>
+        <h3 className="mb-3">
           Espuma para Afeitar y Bálsamo After Shave: <span className="font-normal">Etiquetas frente y dorso</span>
-        </h4>
+        </h3>
         <p>
           Otra línea de productos <strong>myCocos</strong> que necesitaba un cambio en su packaging: la espuma para
           afeitar y el bálsamo after shave, ambos productos en contenedores del estilo dispensador. El mayor reto fue
@@ -102,7 +101,7 @@ function ShopyLibreTrabajos() {
         </p>
         <div className="flex gap-x-4 flex-row">
           <div className="basis-1/2 lg:basis-1/3">
-            <h6 className="mt-6">Referencia</h6>
+            <h5 className="mt-4 mb-2">Referencia</h5>
             <Image
               src="/imagenes/shopylibre-referencia-aftershave.jpg"
               alt=""
@@ -112,7 +111,7 @@ function ShopyLibreTrabajos() {
             />
           </div>
           <div className="basis-1/2 lg:basis-1/3">
-            <h6 className="mt-6">Diseño final</h6>
+            <h5 className="mt-4 mb-2">Diseño final</h5>
             <Image
               src="/imagenes/shopylibre-foto-balsamo.png"
               alt=""
@@ -124,9 +123,9 @@ function ShopyLibreTrabajos() {
         </div>
         <div className="flex gap-x-4 flex-row">
           <div className="basis-1/2 lg:basis-1/3">
-            <h6 className="mt-6">
+            <h5 className="mt-4 mb-2">
               After Shave: <span className="font-normal">Frente</span>
-            </h6>
+            </h5>
             <Image
               src="/imagenes/shopylibre-AfterShave-FRENTE.png"
               alt=""
@@ -136,9 +135,9 @@ function ShopyLibreTrabajos() {
             />
           </div>
           <div className="basis-1/2 lg:basis-1/3">
-            <h6 className="mt-6">
+            <h5 className="mt-4 mb-2">
               After Shave: <span className="font-normal">Dorso</span>
-            </h6>
+            </h5>
             <Image
               src="/imagenes/shopylibre-AfterShave-DORSO.png"
               alt=""
@@ -150,9 +149,9 @@ function ShopyLibreTrabajos() {
         </div>
         <div className="flex gap-x-4 flex-row">
           <div className="basis-1/2 lg:basis-1/3">
-            <h6 className="mt-6">
+            <h5 className="mt-4 mb-2">
               Espuma de afeitar: <span className="font-normal">Frente</span>
-            </h6>
+            </h5>
             <Image
               src="/imagenes/shopylibre-Esp.Afeitar-FRENTE_Mesa de trabajo 1.png"
               alt=""
@@ -162,9 +161,9 @@ function ShopyLibreTrabajos() {
             />
           </div>
           <div className="basis-1/2 lg:basis-1/3">
-            <h6 className="mt-6">
+            <h5 className="mt-4 mb-2">
               Espuma de afeitar: <span className="font-normal">Dorso</span>
-            </h6>
+            </h5>
             <Image
               src="/imagenes/shopylibre-Esp.Afeitar-DORSO.png"
               alt=""
@@ -174,11 +173,11 @@ function ShopyLibreTrabajos() {
             />
           </div>
         </div>
-      </div>
-      <div className="bg-slate-200 p-6 text-slate-950 rounded my-6">
-        <h4 className="mb-3">
+      </ContenedorProyecto>
+      <ContenedorProyecto>
+        <h3 className="mb-3">
           MENN EventPlanner: <span className="font-normal">Packaging contenedor</span>
-        </h4>
+        </h3>
         <p>
           Como la marca lo indica <strong>MENN</strong> es una línea de productos para hombres, idealmente nómadas
           digitales, que viajan por el mundo con su oficina a cuesta. En este caso el producto era una agenda (o{" "}
@@ -202,14 +201,8 @@ function ShopyLibreTrabajos() {
             className="w-full min-h-60"
           />
         </div>
-      </div>
-      <div className="mt-6">
-        <Link href="/" className="flex items-center">
-          <PiArrowCircleLeftDuotone className="mt-0.5 text-lg" />
-          <p className="mb-0 ms-2">Volver</p>
-        </Link>
-      </div>
-    </div>
+      </ContenedorProyecto>
+    </LayoutProyecto>
   );
 }
 

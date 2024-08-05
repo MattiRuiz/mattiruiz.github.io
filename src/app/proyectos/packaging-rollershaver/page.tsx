@@ -1,13 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 
-import { PiArrowCircleLeftDuotone } from "react-icons/pi";
-
+import LayoutProyecto from "../LayoutProyecto";
 import { HeaderProyecto } from "@/components/ui";
 
 function PackagingRollerShaver() {
   return (
-    <div className="mx-auto">
+    <LayoutProyecto>
       <HeaderProyecto
         herramientas="Adobe Illustrator, Adobe Photoshop"
         titulo="Packaging: Afeitadora RollerShaver"
@@ -28,13 +26,7 @@ function PackagingRollerShaver() {
         onda y excelente comunicación de la empresa permitió que el diseño salga de manera orgánica y en poco tiempo.
       </p>
       <Image src="/imagenes/rollerShaver02.png" alt="" width={1200} height={900} className="mt-6" />
-      <div className="mt-6">
-        <Link href="/" className="flex items-center">
-          <PiArrowCircleLeftDuotone className="mt-0.5 text-lg" />
-          <p className="mb-0 ms-2">Volver</p>
-        </Link>
-      </div>
-    </div>
+    </LayoutProyecto>
   );
 }
 
