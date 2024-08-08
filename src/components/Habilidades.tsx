@@ -11,7 +11,7 @@ import {
   SiNextdotjs,
   SiGithub,
   SiMysql,
-  SiPrisma,
+  SiTypescript,
   SiFigma,
   SiAdobeillustrator,
   SiAdobeindesign,
@@ -61,8 +61,8 @@ export function Habilidades() {
           <CardHabilidad nombre="MySQL">
             <SiMysql className="text-4xl text-orange-500 mb-0.5" />
           </CardHabilidad>
-          <CardHabilidad nombre="Prisma">
-            <SiPrisma className="text-4xl text-blue-500 mb-0.5" />
+          <CardHabilidad nombre="Typescript">
+            <SiTypescript className="text-4xl text-blue-500 mb-0.5" />
           </CardHabilidad>
           <CardHabilidad nombre="Github">
             <SiGithub className="text-4xl text-gray-300 mb-0.5" />
