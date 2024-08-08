@@ -28,7 +28,7 @@ export function HeaderProyecto({ herramientas, titulo, estado, color, link, chil
           <div className={`bg-${color}-300 w-3 h-3 rounded-xl ms-2 mt-0.5`}></div>
         </div>
         {link && (
-          <Link href={link} className="flex items-center text-white hover:text-slate-300">
+          <Link href={link} className="flex items-center text-white hover:text-slate-300" target="_blank">
             <PiArrowCircleRightDuotone className="mt-0.5 text-lg" />
             <p className="mb-0 ms-2">Ir al sitio</p>
           </Link>

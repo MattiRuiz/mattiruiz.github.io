@@ -30,6 +30,13 @@ const data = [
     especialidad: "programacion",
   },
   {
+    nombre: "Prototipo de App: Mucamas Hoy",
+    herramientas: "Figma",
+    imagen: "/imagenes/mucamas-home.jpg",
+    link: "/proyectos/prototipo-mucamas",
+    especialidad: "disenio",
+  },
+  {
     nombre: "ShopyLibre: otros trabajos",
     herramientas: "Adobe Illustrator, Adobe Photoshop",
     imagen: "/imagenes/shopylibre-miniatura.jpg",
@@ -49,6 +56,13 @@ const data = [
     imagen: "/imagenes/05-despues.jpg",
     link: "/proyectos/maquetacion-en-powerpoint",
     especialidad: "disenio",
+  },
+  {
+    nombre: "Sitio Web: Ciberpsicología en español",
+    herramientas: "HTML, Bootstrap",
+    imagen: "/imagenes/ciberpsicologia-miniatura.jpg",
+    link: "/proyectos/ciberpsicologia",
+    especialidad: "programacion",
   },
 ];
 

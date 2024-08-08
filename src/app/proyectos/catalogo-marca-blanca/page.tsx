@@ -18,9 +18,9 @@ function CatalogoMarcablanca() {
 
       <p>
         Actualmente en proceso de desarrollo, realizado en colaboración con mi amigo y colega{" "}
-        <strong>Facundo Romano.</strong> Él está a cargo del <em>back-end</em>, desarrollado con{" "}
-        <strong>Node.js (Express, Prisma) y mySql</strong>, mientras que yo me ocupo del <em>front-end</em> realizado
-        con <strong>React.js y React Bootstrap</strong>.
+        <strong>Facundo Romano</strong> (<a href="https://faacuromano.github.io/">https://faacuromano.github.io/</a>).
+        Él está a cargo del <em>back-end</em>, desarrollado con <strong>Node.js (Express, Prisma) y mySql</strong>,
+        mientras que yo me ocupo del <em>front-end</em> realizado con <strong>React.js y React Bootstrap</strong>.
       </p>
       <p>
         Este proyecto fue solicitado por el mayorista textil <strong>Marca Blanca</strong> ubicado en la zona centro de
