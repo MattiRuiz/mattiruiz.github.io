@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import LayoutProyecto from "../LayoutProyecto";
-import { HeaderProyecto, TituloHome } from "@/components/ui";
+import { HeaderProyecto } from "@/components/ui";
 
 import { SiBehance } from "react-icons/si";
 
