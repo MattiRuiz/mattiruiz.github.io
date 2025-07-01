@@ -32,7 +32,7 @@ export function BloqueContacto() {
 
       if (!userName || !userEmail || !userPhone || !message) {
         setAlertColor("red");
-        setAlertMessage("Por favor rellene todos los campos para enviar un mensaje.");
+        setAlertMessage("Por favor complete todos los campos para enviar un mensaje.");
         handleAlert();
       } else {
         emailjs
@@ -42,7 +42,7 @@ export function BloqueContacto() {
           .then(
             () => {
               setAlertColor("green");
-              setAlertMessage("¡Mensaje enviado con éxito!");
+              setAlertMessage("¡Gracias! Tu mensaje fue enviado correctamente.");
               handleAlert();
             },
             (error) => {
@@ -103,15 +103,16 @@ export function BloqueContacto() {
             <h3 className="mb-2">Enviame un mensaje</h3>
             <p className="leading-snug">Rellena el formulario y te responderé a la brevedad.</p>
             <form ref={form} onSubmit={sendEmail} className="md:w-4/5">
-              <Input type="text" placeholder="Nombre" name="user_name" />
-              <Input type="email" placeholder="Email" name="user_email" />
-              <Input type="number" placeholder="Celular" name="user_phone" />
+              <Input type="text" placeholder="Nombre *" name="user_name" aria-label="Nombre" required />
+              <Input type="email" placeholder="Email *" name="user_email" aria-label="Email" required />
+              <Input type="tel" placeholder="Celular *" name="user_phone" aria-label="Celular" required />
               <textarea
-                placeholder="Mensaje"
+                placeholder="Mensaje" aria-label="Mensaje"
                 rows={2}
                 name="message"
                 className="mb-3 block w-full bg-slate-200 text-slate-900 px-3 py-2 rounded-md text-sm placeholder-slate-600"
               />
+              <p className="text-xs">* Campos obligatorios</p>
               <Boton type="submit" value="Send" disabled={loading}>
                 {loading ? "Enviando..." : "Enviar"}
               </Boton>

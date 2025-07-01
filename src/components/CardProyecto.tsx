@@ -13,7 +13,7 @@ export function CardProyecto({ nombre, herramientas, imagen, link }: CardProyect
   return (
     <Link href={link ? link : "#"} className="bg-slate-800 border border-slate-700 rounded-md">
       <div className="relative aspect-w-4 aspect-h-3 overflow-hidden shadow rounded-t-md">
-        <Image src={imagen ? imagen : imgDefecto} alt={nombre} layout="fill" objectFit="cover" />
+        <Image src={imagen ? imagen : imgDefecto} alt={nombre} fill={true} style={{ objectFit: "cover" }} />
       </div>
       <div className="p-4">
         <p className="text-sm mb-2 text-slate-900 font-semibold bg-slate-400 inline-block py-0.5 px-2 rounded-md">
