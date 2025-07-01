@@ -20,39 +20,26 @@ function CiberPsicologia() {
         <Image src="/imagenes/ciberpsicologia-miniatura.jpg" alt="" width={300} height={700} />
       </HeaderProyecto>
       <p>
-        A comienzos de 2021, un grupo de Licenciados en Psicología me encargó la creación de un sitio web especializado
-        en CiberPsicología, una rama de la psicología que estudia la relación del ser humano con los dispositivos
-        digitales.
+        A comienzos de 2021, un grupo de Licenciados en Psicología me encargó el diseño y desarrollo de un sitio web dedicado a la Ciberpsicología, una disciplina que estudia la relación del ser humano con los dispositivos digitales.
       </p>
       <Image src="/imagenes/ciberpsicologia-inicio.jpg" alt="" width={1200} height={500} className="w-full my-6" />
       <p>
-        El sitio incluía una página de inicio, una sección de "Quiénes Somos", un formulario de contacto y una
-        biblioteca organizada en diversas categorías temáticas. Estas categorías abarcaban temas como Adicciones,
-        Ciberacoso, E-sports, Glosario, Libros, Películas, Realidad Virtual, Redes Sociales, Teleterapia y Videojuegos,
-        cada una con artículos especializados en la materia.
+        El sitio incluía una página de inicio, una sección “Quiénes somos”, un formulario de contacto y una biblioteca de artículos organizada en categorías temáticas como: Adicciones, Ciberacoso, E-sports, Glosario, Libros, Películas, Realidad Virtual, Redes Sociales, Teleterapia y Videojuegos. Cada categoría contaba con artículos seleccionados y redactados por los profesionales a cargo.
       </p>
       <Image src="/imagenes/ciberpsicologia-categoria.jpg" alt="" width={1200} height={500} className="w-full my-6" />
       <p>
-        Para lograr una estética que evocara la tecnología, se empleó un fondo oscuro que interactuaba con imágenes a
-        través de transparencias y difuminados, contrastando con el texto en color blanco o un amarillo institucional.
-        La tipografía seleccionada fue la familia <strong>"Lato",</strong> disponible en <em>Google Fonts</em>, por su
-        buena legibilidad y la clara diferenciación entre las versiones redonda e itálica/cursiva.
+        La estética buscaba transmitir una identidad tecnológica: fondo oscuro, imágenes con transparencias y efectos difuminados, y una paleta de alto contraste (blanco y amarillo institucional). Se utilizó la familia tipográfica <em>Lato</em> (Google Fonts), por su excelente legibilidad y su buena diferenciación entre redonda e itálica.
       </p>
       <Image src="/imagenes/ciberpsicologia-articulo.png" alt="" width={1200} height={500} className="w-full my-6" />
       <p>
-        Este proyecto fue mi primera experiencia en diseño web, por lo que le tengo un gran aprecio. Con el tiempo, he
-        llegado a la conclusión de que uno de los motivos por los cuales el sitio no subsistió fue la falta de un
-        sistema de administración que permitiera a los profesionales agregar nuevos artículos, ya que el sitio solo
-        usaba <strong>HTML, CSS y Bootstrap.</strong> Hoy en día, me sería más sencillo implementar una{" "}
-        <strong>API REST</strong> con base de datos o utilizar <strong>WordPress</strong> para mejorar la funcionalidad.
-        A pesar de esto, considero que el diseño envejeció bien y aún se ve moderno, con un diseño responsivo que
-        funciona adecuadamente en todos los tamaños de pantalla.
+        Este fue mi primer proyecto de diseño web, y por eso le tengo un aprecio especial. Con el tiempo, reconocí que una de las limitaciones principales fue la ausencia de un sistema de gestión de contenidos, lo cual dificultaba la actualización del sitio por parte del equipo. La solución se construyó únicamente con HTML, CSS y Bootstrap, sin una capa administrativa o base de datos. Hoy en día, abordaría un proyecto similar integrando una API REST o utilizando WordPress como CMS.
       </p>
+      <p>Aun así, considero que el diseño ha envejecido bien. La estructura sigue siendo clara y el sitio es completamente responsivo, adaptándose a diferentes tamaños de pantalla sin inconvenientes.</p>
       <div className=" mt-6 flex justify-center">
         <Link href="https://www.behance.net/gallery/120371511/Pagina-web-Ciberpsicologia" target="_blank">
           <button className="flex items-center rounded-md px-3 py-2 leading-tight bg-slate-200 text-slate-800 hover:bg-slate-300">
             <SiBehance className="me-2 text-2xl " />
-            Ver todas las capturas de desktop y mobile
+            Ver más las capturas de desktop y mobile
           </button>
         </Link>
       </div>

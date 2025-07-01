@@ -16,7 +16,7 @@ export function CardProyecto({ nombre, herramientas, imagen, link }: CardProyect
         <Image src={imagen ? imagen : imgDefecto} alt={nombre} fill={true} style={{ objectFit: "cover" }} />
       </div>
       <div className="p-4">
-        <p className="text-sm mb-2 text-slate-900 font-semibold bg-slate-400 inline-block py-0.5 px-2 rounded-md">
+        <p className="text-sm mb-2 text-slate-900 font-semibold bg-slate-400 inline-block py-0.5 px-2 rounded-md truncate max-w-full" title={herramientas}>
           {herramientas}
         </p>
         <h5 className="text-white font-medium">{nombre}</h5>

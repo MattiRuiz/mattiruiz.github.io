@@ -18,35 +18,22 @@ function MedanosPatagonia() {
       </HeaderProyecto>
 
       <p>
-        El trabajo se realizó entre octubre de 2023 y mayo de 2024. El encargado del sitio se puso en contacto para
-        resolver problemas de comunicación que afectaban al sistema: muchos usuarios no lograban completar sus reservas
-        y se generaban numerosas consultas en WhatsApp sobre información ya disponible en el sitio.
+        Entre octubre de 2023 y mayo de 2024 llevé adelante el rediseño y mantenimiento del sitio de reservas <em>Médanos Patagonia</em>. El cliente me contactó para resolver una serie de problemas que afectaban directamente la conversión: muchos usuarios no lograban concretar su reserva y se generaban numerosas consultas por WhatsApp sobre información ya publicada en el sitio.
+      </p>
+      <h4 className="mt-6">Auditoría y rediseño</h4>
+      <p>
+        Como primer paso, realicé una investigación para detectar fallas tanto visuales como funcionales. A partir de ese diagnóstico, propuse y ejecuté una serie de mejoras dentro de las posibilidades que ofrecían WordPress, el tema y los plugins existentes. Se reestructuraron contenidos, se mejoró la jerarquía visual, y se adaptó la interfaz para una mejor comprensión por parte del usuario.
+      </p>
+      <p>Uno de los mayores problemas detectados fue la visualización deficiente del sitio en dispositivos móviles. Para resolverlo, implementé una capa de CSS personalizado que corrigió estilos heredados del tema y mejoró significativamente la experiencia responsive.</p>
+      <h4 className="mt-6">Incidente de seguridad</h4>
+      <p>
+        A fines de 2023, el sitio fue comprometido por un virus que reemplazó los enlaces con accesos a una tienda virtual china y bloqueó el acceso al panel de administración. Tras una reunión con el cliente, se optó inicialmente por contratar al servicio técnico del hosting para restaurar el sitio.
       </p>
       <p>
-        Inicialmente, se llevó a cabo una investigación para identificar las debilidades y problemáticas tanto visuales
-        como funcionales. Posteriormente, se realizaron cambios estructurales, visuales y de contenido, dentro de las
-        posibilidades que ofrecían WordPress, el tema y los plugins utilizados, logrando así una gran mejora en la
-        relación del cliente con el usuario. También se encontraron muchos problemas en la visualización del sitio en
-        tamaño celular, por lo que se le aplicó una capa de CSS personalizado con modificaciones del estilo.
-      </p>
-      <h4 className="mt-6">Seguridad</h4>
-      <p>
-        A finales de 2023, surgió un problema de seguridad cuando un virus infectó el sitio, reemplazando todos los
-        enlaces con accesos a productos de una tienda virtual china y bloqueando el acceso al administrador. Tras una
-        reunión con el personal, se decidió que la mejor opción era pagar a la empresa que ofrece el servicio de hosting
-        para solucionar el problema, ya que no tenía experiencia en este tipo de trabajo.
+        Aunque lograron restaurar el acceso, el malware persistía. Ante la falta de soluciones definitivas y luego de varias negociaciones frustradas con la empresa de hosting, decidí hacerme cargo personalmente de la limpieza del sitio.
       </p>
       <p>
-        La empresa de hosting restauró los enlaces y solucionó el problema de acceso al administrador, pero no eliminó
-        completamente los virus, lo que provocaba que el sitio se reinfectara cada poco tiempo. Después de negociaciones
-        frustrantes con la empresa de hosting, decidí tomar el control del problema.
-      </p>
-      <p>
-        Tras varios intentos fallidos y múltiples reinfecciones en un corto periodo, descubrí que los virus se alojaban
-        únicamente en archivos ".js" distribuidos en el tema y en varios plugins. La manera de detectarlos fue comparar
-        el peso de los archivos originales con los del sitio infectado. Utilizando FTP, realicé una búsqueda minuciosa
-        comparando un servidor local con los plugins instalados y el servidor en línea, aplicando los cambios necesarios
-        y erradicando finalmente el problema de virus.
+        Tras varios intentos fallidos y nuevas reinfecciones, descubrí que los archivos infectados eran principalmente archivos .js presentes en el tema y algunos plugins. Para identificarlos, comparé el peso y contenido de los archivos originales con los del sitio infectado. Utilizando FTP y un entorno local de respaldo, realicé una limpieza manual y selectiva de los archivos, logrando finalmente erradicar el malware de forma definitiva.
       </p>
     </LayoutProyecto>
   );

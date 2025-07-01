@@ -23,7 +23,7 @@ export default function Home() {
           .
         </p>
         <p>Actualmente y desde el comienzo del 2023, me desempeño como <strong>profesor titular</strong> de la materia <em>Tipografía y Entorno Digital</em> en la Universidad del Gran Rosario, en el CCC de Licenciatura en Diseño de Comunicación Visual.</p>
-        <div className="w-1/4 h-px bg-white opacity-75 mx-auto mt-8 flex justify-center items-center">
+        <div className="w-1/3 h-px bg-white opacity-75 mx-auto mt-8 flex justify-center items-center">
           <div className="w-3 h-3 rounded-full bg-white"></div>
         </div>
       </div>

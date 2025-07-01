@@ -13,17 +13,26 @@ function Powerpoint() {
         color=""
         link=""
       >
-        <Image src="/imagenes/presentacion-miniatura.jpg" alt="" width={300} height={700} />
+        <Image
+          src="/imagenes/presentacion-miniatura.jpg"
+          alt=""
+          width={300}
+          height={700}
+        />
       </HeaderProyecto>
 
       <p>
-        Este proyecto consistió en el diseño y la maquetación de 28 diapositivas para una presentación profesional.
-        Realizado a través de la plataforma <strong>Upwork</strong> en marzo de 2022, el objetivo fue utilizar los
-        bocetos del cliente para crear una presentación visualmente atractiva y coherente.
+        Este proyecto consistió en el diseño y maquetación de una presentación
+        profesional de 28 diapositivas, encargada a través de la plataforma
+        <em>Upwork</em> en marzo de 2022. El objetivo fue transformar los
+        bocetos enviados por el cliente en una presentación visualmente
+        atractiva, clara y coherente, optimizada para su uso en contextos
+        formales.
       </p>
       <p>
-        A continuación de la presentación, elegí varias de las diapositivas para explicar algunas de las decisiones
-        visuales tomadas durante el proyecto.
+        A continuación se encuentra la presentación final y por debajo una breve
+        descripción de las decisiones de diseño más relevantes, ilustradas con
+        ejemplos de bocetos y del resultado final.
       </p>
       <div className="flex justify-center mt-6">
         <iframe
@@ -34,109 +43,184 @@ function Powerpoint() {
         ></iframe>
       </div>
       <div className="mt-10">
-        <TituloHome>Descripción</TituloHome>
-        <h4 className="mb-1">
-          Diapositiva 01: <span className="font-normal">Tipografía</span>
-        </h4>
+        <h4 className="mt-6">Tipografía</h4>
         <p>
-          Para lograr un estilo minimalista y limpio, se seleccionaron las fuentes <strong>Roboto</strong> para el texto
-          en bloque y <strong>Roboto Slab</strong> para los titulares. En las diapositivas más sencillas o de
-          transición, se utilizaron elementos decorativos y cambios de color, junto con la interpolación entre
-          diapositivas, para añadir un toque atractivo y mantener el interés visual.
+          Desde el inicio se buscó un estilo{" "}
+          <strong>minimalista y limpio</strong>. Para ello se eligió la familia
+          tipográfica <em>Roboto</em> para los textos corridos, y{" "}
+          <em>Roboto Slab</em> para los títulos, logrando un contraste
+          jerárquico claro sin perder cohesión visual. En las diapositivas más
+          simples o de transición, se utilizaron sutiles elementos decorativos,
+          variaciones de color y transiciones animadas que aportan dinamismo y
+          atractivo visual.
         </p>
-        <div className="inline md:flex gap-x-4 flex-row">
+        <div className="inline md:flex gap-x-4 flex-row pt-4">
           <div className="basis-1/2">
-            <Image src="/imagenes/01-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/01-antes.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/01-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/01-despues.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
         </div>
 
-        <h4 className="mb-1 mt-10">
-          Diapositiva 02: <span className="font-normal">Colores</span>
-        </h4>
+        <h4 className="mt-6">Colores</h4>
         <p>
-          Para maximizar la legibilidad se utilizó un fondo blanco con texto en gris oscuro. Además se eligió una paleta
-          de varios colores que permitió adecuarse a los diferentes tipos de gráficos y cuadros requeridos.
+          Se trabajó con un fondo{" "}
+          <strong>blanco y texto en gris oscuro,</strong> priorizando la
+          legibilidad. A esta base neutra se le sumó una paleta amplia de
+          colores complementarios, pensada para adaptarse con facilidad a
+          distintos tipos de gráficos, tablas y visualizaciones de datos.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <Image src="/imagenes/02-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/02-antes.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/02-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/02-despues.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
         </div>
 
-        <h4 className="mb-1 mt-10">
-          Diapositiva 03: <span className="font-normal">Recursos</span>
-        </h4>
+        <h4 className="mt-6">Recursos visuales</h4>
         <p>
-          Se incorporaron diversos componentes visuales para apoyar y reforzar el mensaje que se quería comunicar. Esto
-          incluyó iconografía, imágenes y diagramas que complementan el contenido textual y mejoran la comprensión del
-          mensaje.
+          Para reforzar el contenido y facilitar su comprensión, se incorporaron
+          iconografía, imágenes, diagramas y elementos gráficos que acompañan el
+          texto. Estos recursos no solo enriquecen la estética, sino que también
+          ayudan a mantener la atención y guiar la mirada del espectador.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <Image src="/imagenes/03-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/03-antes.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/03-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/03-despues.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
         </div>
 
-        <h4 className="mb-1 mt-10">
-          Diapositiva 04: <span className="font-normal">Simplificación</span>
-        </h4>
+        <h4 className="mt-6">Simplificación</h4>
         <p>
-          Se modificaron los recursos visuales para que el mensaje fuera claro y entendible. Esto incluyó la eliminación
-          de elementos innecesarios y la simplificación de gráficos y textos para garantizar una comunicación efectiva y
-          directa.
+          Se modificaron los recursos visuales para que el mensaje fuera claro y
+          entendible. Se depuraron los gráficos y textos eliminando elementos
+          innecesarios, logrando una comunicación directa y clara. Este criterio
+          se aplicó de forma transversal en toda la presentación.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <Image src="/imagenes/04-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/04-antes.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/04-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/04-despues.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
         </div>
 
-        <h4 className="mb-1 mt-10">
-          Diapositiva 05: <span className="font-normal">Adaptación</span>
-        </h4>
+        <h4 className="mt-6">Adaptación gráfica</h4>
         <p>
-          Se adaptaron los gráficos requeridos a la paleta de colores y las tipografías seleccionadas, asegurando que
-          todos los elementos visuales mantuvieran una coherencia estilística y fueran fácilmente identificables dentro
-          del diseño general de la presentación.
+          Los gráficos provistos por el cliente fueron reestilizados para
+          integrarse visualmente al sistema gráfico general. Se adaptaron a la
+          paleta de colores seleccionada y a las tipografías definidas, logrando{" "}
+          <strong>consistencia estética</strong> en toda la presentación.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <Image src="/imagenes/05-antes.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/05-antes.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/05-despues.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/05-despues.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
         </div>
 
-        <h4 className="mb-1 mt-10">
-          Otras diapositivas: <span className="font-normal">Destacadas</span>
-        </h4>
+        <h4 className="mt-6">Diapositivas destacadas</h4>
         <p>
-          Algunas diapositivas seleccionadas, como las que contienen ejercicios, se diseñaron con un fondo gris. Este
-          fondo se utilizó para aprovechar el contraste con el blanco, generando recuadros destacados que dirigen la
-          atención del espectador hacia los elementos importantes.
+          En algunas diapositivas, como aquellas con ejercicios o llamadas de
+          atención, se utilizó un fondo gris claro. Esta decisión buscó generar
+          contraste con el resto de las pantallas.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <Image src="/imagenes/23.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/23.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/27.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/27.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
           <div className="basis-1/2">
-            <Image src="/imagenes/30.jpg" alt="" width={500} height={500} className="w-full mb-2" />
+            <Image
+              src="/imagenes/30.jpg"
+              alt=""
+              width={500}
+              height={500}
+              className="w-full mb-2"
+            />
           </div>
         </div>
       </div>

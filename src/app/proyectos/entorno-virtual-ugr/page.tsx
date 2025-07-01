@@ -10,94 +10,155 @@ function UGRVirtual() {
       <HeaderProyecto
         herramientas="Moodle, CSS, Figma"
         titulo="Rediseño del Entorno Virtual de la Universidad del Gran Rosario"
-        estado="Activo (se requiere acceso)"
+        estado="Activo (requiere acceso institucional)"
         color="green"
         link="https://virtual.ugr.edu.ar/"
       >
-        <Image src="/imagenes/ugr-celular.jpg" alt="" width={400} height={700} />
+        <Image
+          src="/imagenes/ugr-celular.jpg"
+          alt=""
+          width={400}
+          height={700}
+        />
       </HeaderProyecto>
       <p>
         La{" "}
         <Link href="https://ugr.edu.ar/" target="_blank">
           Universidad del Gran Rosario
         </Link>
-        , con sede central en Corrientes 1254, Rosario - Santa Fe, utiliza un entorno virtual basado en Moodle. Esta
-        plataforma es empleada tanto para impartir clases online, de manera sincrónica y asincrónica, a estudiantes de
-        Argentina y Ecuador, como para proporcionar material adicional a las clases presenciales.
+        , con sede central en Corrientes 1254 (Rosario, Santa Fe), utiliza una
+        plataforma educativa basada en <em>Moodle</em> para impartir clases
+        sincrónicas y asincrónicas, tanto a estudiantes de Argentina como de
+        Ecuador. Además, funciona como soporte para las clases presenciales,
+        brindando acceso a materiales, entregas y recursos académicos
       </p>
       <p>
-        Durante el receso de verano de 2024, se llevó a cabo un proceso de rediseño de la interfaz de Moodle, que se
-        extendió por tres meses. En esta fase, se realizó una investigación exhaustiva para identificar las falencias y
-        problemáticas de la interfaz actual. Posteriormente, se propuso un nuevo diseño centrado en el usuario
-        principal: el alumno. Una vez aprobado, se implementaron los cambios utilizando únicamente CSS, estandarizando
-        los espaciados y los estilos de los componentes, respetando las limitaciones del propio Moodle.
+        Durante el receso de verano de 2024, llevamos a cabo un proceso de
+        rediseño completo de la interfaz del entorno virtual. Este trabajo se
+        extendió por tres meses e incluyó:
       </p>
+      <h4 className="mt-6">Investigación y diagnóstico</h4>
       <p>
-        Dado que no puedo proporcionar acceso directo sin una cuenta de alumno, voy a incluir varias imagenes para
-        explicar algunas de los decisiones visuales aplicadas. Estas imágenes mostrarán las mejoras en la navegación, la
-        legibilidad y la estética general de la plataforma.
+        Comenzamos con una auditoría detallada del estado actual de la interfaz,
+        identificando problemas de usabilidad, redundancia de elementos, falta
+        de jerarquía visual y deficiencias en la experiencia mobile.
+      </p>
+      <h4 className="mt-6">Propuesta e implementación</h4>
+      <p>
+        Una vez aprobado el nuevo diseño —centrado en el usuario prin cipal: el
+        estudiante—, se implementaron los cambios exclusivamente mediante CSS
+        personalizado, debido alas restricciones propias de Moodle. Se
+        estandarizaron márgenes, tipografías, botones y otros componentes para
+        unificar criterios visuales y mejorar la legibilidad.
       </p>
       <div className="mt-8">
-        <TituloHome>Antes y después</TituloHome>
+        <TituloHome>Cambios destacados</TituloHome>
       </div>
-      <h5>Header</h5>
+      <h4 className="mt-6">Header</h4>
       <p>
-        El logo del header no respondía a la imagen institucional, por lo que se creó una variable adaptada al entorno
-        virtual.
+        Se reemplazó el logotipo por una versión institucional, especialmente
+        adaptada para su uso en el entorno virtual. Además, se reorganizó la
+        navegación, reduciendo tres barras superpuestas a solo dos, priorizando
+        así los accesos realmente útiles tanto para alumnos como para docentes.
       </p>
-      <p>
-        Se unificaron las barras de navegación de 3 a 2, dejando únicamente los accesos y las funcionalidades relevantes
-        tanto para alumnos como para profesores.
-      </p>
-      <Image src="/imagenes/ugr-header-antes.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
-      <Image src="/imagenes/ugr-header-despues.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
+      <Image
+        src="/imagenes/ugr-header-antes.jpg"
+        alt=""
+        width={1000}
+        height={500}
+        className="w-full mb-2"
+      />
+      <Image
+        src="/imagenes/ugr-header-despues.jpg"
+        alt=""
+        width={1000}
+        height={500}
+        className="w-full mb-2"
+      />
 
-      <h5 className="mt-8">Footer</h5>
+      <h4 className="mt-6">Footer</h4>
       <p>
-        Se agregó el logo con un atajo a la página de inicio. Se administraron mejor los espacios entre elementos,
-        dándoles jerarquías claras para organizar mejor la información y se utilizaron íconos para facilitar su lectura
-        rápida.
-      </p>
-      <p>
-        Además, se implementó un diseño responsivo para que el footer se muestre adecuadamente en dispositivos móviles,
-        ya que anteriormente lo ocultaban.
+        En el pie de página se incorporó el logo institucional con un acceso
+        directo a la página de inicio. Se reorganizó el contenido aplicando
+        jerarquías visuales claras y se agregaron íconos que mejoran la lectura
+        rápida de los elementos. También se trabajó en su adaptabilidad:
+        mientras que anteriormente el footer se ocultaba en dispositivos
+        móviles, ahora cuenta con un diseño completamente responsive.
       </p>
       <div className="inline md:flex gap-x-4 flex-row">
         <div className="basis-1/2">
-          <Image src="/imagenes/ugr-footer-antes.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
+          <Image
+            src="/imagenes/ugr-footer-antes.jpg"
+            alt=""
+            width={1000}
+            height={500}
+            className="w-full mb-2"
+          />
         </div>
         <div className="basis-1/2">
-          <Image src="/imagenes/ugr-footer-despues.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
+          <Image
+            src="/imagenes/ugr-footer-despues.jpg"
+            alt=""
+            width={1000}
+            height={500}
+            className="w-full mb-2"
+          />
         </div>
       </div>
 
-      <h5 className="mt-8">Portada</h5>
+      <h4 className="mt-6">Página de inicio</h4>
       <p>
-        Se eliminaron accesos directos que solo servían para administradores y moderadores. Los accesos generales se
-        colocaron en un menú desplegable y las imagenes publicitarias se limitaron a un carrusel (anteriormente se
-        utilizaban las mismas imágenes que en Instagram). Se dio prioridad a los accesos a las aulas matriculadas.
+        En la página de inicio se eliminaron accesos que solo eran relevantes
+        para administradores y moderadores. Los accesos generales se organizaron
+        en un menú desplegable, y las imágenes publicitarias —que anteriormente
+        replicaban contenido de Instagram— fueron reemplazadas por un carrusel
+        institucional más sobrio. Se priorizó el acceso directo a las aulas en
+        las que el usuario está matriculado, mejorando la eficiencia de la
+        navegación.
       </p>
       <div className="inline md:flex gap-x-4 flex-row">
         <div className="basis-1/2">
-          <Image src="/imagenes/ugr-portada-antes.png" alt="" width={1000} height={500} className="w-full mb-2" />
+          <Image
+            src="/imagenes/ugr-portada-antes.png"
+            alt=""
+            width={1000}
+            height={500}
+            className="w-full mb-2"
+          />
         </div>
         <div className="basis-1/2">
-          <Image src="/imagenes/ugr-portada-despues.png" alt="" width={1000} height={500} className="w-full mb-2" />
+          <Image
+            src="/imagenes/ugr-portada-despues.png"
+            alt=""
+            width={1000}
+            height={500}
+            className="w-full mb-2"
+          />
         </div>
       </div>
-      <h5 className="mt-8">Chat</h5>
+      <h4 className="mt-6">Chat</h4>
       <p>
-        Se unificaron los criterios visuales con la paleta de estilo. En el chat general se pudo colocar el input de
-        búsqueda y las otras opciones en una sola línea. En el interior del mensaje se eliminó el nombre y el avatar de
-        cada mensaje para evitar la redundancia de información.
+        Se aplicó la nueva paleta de estilos para unificar visualmente el
+        entorno. Dentro del chat general, se reorganizaron el buscador y las
+        opciones para ubicarlos en una sola línea, optimizando el espacio. En la
+        vista de conversación, se eliminó la repetición de nombres y avatares en
+        cada mensaje, reduciendo la saturación visual y mejorando la legibilidad
+        general
       </p>
       <div className="flex gap-x-4 flex-row">
         <div className="basis-1/4">
-          <Image src="/imagenes/ugr-chat-general-antes.jpg" alt="" width={1000} height={500} className="w-full mb-2" />
+          <Image
+            src="/imagenes/ugr-chat-general-antes.jpg"
+            alt=""
+            width={1000}
+            height={500}
+            className="w-full mb-2"
+          />
         </div>
+
         <div className="basis-1/4">
           <Image
-            src="/imagenes/ugr-chat-general-despues.jpg"
+            src="/imagenes/ugr-chat-individual-antes.jpg"
             alt=""
             width={1000}
             height={500}
@@ -106,7 +167,7 @@ function UGRVirtual() {
         </div>
         <div className="basis-1/4">
           <Image
-            src="/imagenes/ugr-chat-individual-antes.jpg"
+            src="/imagenes/ugr-chat-general-despues.jpg"
             alt=""
             width={1000}
             height={500}

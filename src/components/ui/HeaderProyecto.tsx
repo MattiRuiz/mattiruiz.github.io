@@ -22,10 +22,12 @@ export function HeaderProyecto({ herramientas, titulo, estado, color, link, chil
         <h6 className="text-slate-400 mb-2 font-semibold">{herramientas}</h6>
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-3">{titulo}</h1>
         <div className="flex items-center mb-2">
+          {color === "red" && <div className={`bg-red-500 w-3 h-3 rounded-xl me-2 mt-0.5`}></div>}
+          {color === "green" && <div className={`bg-green-500 w-3 h-3 rounded-xl me-2 mt-0.5`}></div>}
           <p className="mb-0">
             <strong>Estado:</strong> {estado}
           </p>
-          <div className={`bg-${color}-300 w-3 h-3 rounded-xl ms-2 mt-0.5`}></div>
+          
         </div>
         {link && (
           <Link href={link} className="flex items-center text-white hover:text-slate-300" target="_blank">
