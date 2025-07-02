@@ -9,29 +9,40 @@ function ShopyLibreTrabajos() {
     <LayoutProyecto>
       <HeaderProyecto
         herramientas="Adobe Illustrator, Adobe Photoshop"
-        titulo="ShopyLibre: Otros Proyectos"
+        titulo="ShopyLibre: Diseño de packaging de diferentes productos"
         estado="Finalizado"
         color=""
         link=""
       >
-        <Image src="/imagenes/shopylibre-foto-balsamo.png" alt="" width={300} height={700} />
+        <Image
+          src="/imagenes/shopylibre-foto-balsamo.png"
+          alt=""
+          width={300}
+          height={700}
+        />
       </HeaderProyecto>
-      <p>
-        En 2022, a través de la plataforma Upwork, comenzamos una relación comercial con la empresa importadora{" "}
-        <strong>ShopyLibre</strong> de Chile. A lo largo del tiempo, ShopyLibre me ha solicitado diversos trabajos de
-        packaging. El primero de estos fue el diseño del empaque para la afeitadora{" "}
-        <Link href="/disenio/packaging-rollershaver">RollerShaver</Link>, para luego realizar el diseño de packaging de
-        varios productos que algunos se mostrarán a continuación.
+      <p className="mb-6">
+        En 2022, a través de la plataforma Upwork, inicié una relación comercial
+        con <strong>ShopyLibre</strong>, una empresa importadora con sede en
+        Chile. Desde entonces, me ha solicitado participar de diversos proyectos
+        de diseño de packaging para los productos de sus líneas comerciales. A
+        continuación, se presentan algunos de los trabajos realizados.
       </p>
       <ContenedorProyecto>
         <h3 className="mb-3">
-          Afeitadora myCOCOS: <span className="font-normal">Rediseño de Packaging</span>
+          Afeitadora myCOCOS:{" "}
+          <span className="font-normal">Rediseño de Packaging</span>
         </h3>
         <p>
-          <strong>myCOCOS</strong> es una las líneas insignia de la empresa de productos para el cuidado íntimo y ya
-          tenía una estética bastante establecida. Luego de un análisis de la web del producto y sus otros productos
-          derivados y, siguiendo las indicaciones del cliente, se modificó el packaging de la afeitadora hacia una
-          estética más sobria y despojada con un foco en la imagen del producto.
+          La línea myCOCOS, especializada en productos para el cuidado íntimo,
+          ya contaba con una estética visual consolidada. Para el rediseño de la
+          afeitadora, se realizó un análisis del sitio web oficial y de
+          productos relacionados, con el fin de identificar los elementos
+          identitarios más relevantes. A partir de esta investigación, y
+          siguiendo las indicaciones del cliente, se propuso un diseño sobrio y
+          despojado, donde la imagen del producto ocupa un lugar protagónico. Se
+          tomaron como referencia modelos anteriores de la línea —como el Pride—
+          para mantener coherencia con la marca.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-1/2">
@@ -58,16 +69,22 @@ function ShopyLibreTrabajos() {
       </ContenedorProyecto>
       <ContenedorProyecto>
         <h3 className="mb-3">
-          Bálsamo After Shave: <span className="font-normal">Tubo de cartón</span>
+          Bálsamo After Shave:{" "}
+          <span className="font-normal">Tubo de cartón</span>
         </h3>
         <p>
-          Se me solicitó crear un diseño simple para unos pequeños tubos de cartón que contienen un bálsamo para después
-          de afeitarse. Continuando con la paleta de recursos obtenida de la investigación realizada para la afeitadora{" "}
-          <strong>myCocos</strong> se obtuvo un diseño despojado y muy efectivo.
+          Se diseñó un pequeño envase de cartón para bálsamo post afeitado,
+          manteniendo la coherencia con la estética definida previamente para la
+          línea <strong>myCOCOS</strong>. El resultado fue un diseño
+          minimalista, donde se prioriza la limpieza visual y la identificación
+          del producto. El diseño fue adaptado al troquel final y optimizado
+          para impresión.
         </p>
         <div className="inline lg:flex gap-x-4 flex-row">
           <div className="basis-1/2">
-            <h5 className="mt-4 mb-2">Plano con troquelado y ejemplo de diseño</h5>
+            <h5 className="mt-4 mb-2">
+              Plano con troquelado y ejemplo de diseño
+            </h5>
             <Image
               src="/imagenes/shopylibre-carton-ejemplo.jpg"
               alt=""
@@ -90,14 +107,19 @@ function ShopyLibreTrabajos() {
       </ContenedorProyecto>
       <ContenedorProyecto>
         <h3 className="mb-3">
-          Espuma para Afeitar y Bálsamo After Shave: <span className="font-normal">Etiquetas frente y dorso</span>
+          Espuma para Afeitar y Bálsamo After Shave:{" "}
+          <span className="font-normal">Etiquetas frente y dorso</span>
         </h3>
         <p>
-          Otra línea de productos <strong>myCocos</strong> que necesitaba un cambio en su packaging: la espuma para
-          afeitar y el bálsamo after shave, ambos productos en contenedores del estilo dispensador. El mayor reto fue
-          colocar los ingredientes del producto y la información legal en la pequeña etiqueta del dorso. Para esto, se
-          utilizó una tipografía condenzada, en negrita y con grandes ojos internos para que, a la hora de imprimirlo,
-          no se pierda con la ganancia de punto, ya que el fondo era de un color azul oscuro.
+          Para estos productos en formato dispensador, se trabajó en el diseño
+          de las etiquetas tanto del frente como del dorso. El principal desafío
+          fue adaptar la información legal e ingredientes en un espacio reducido
+          sin comprometer la legibilidad. Para ello, se utilizó una{" "}
+          <strong>tipografía condensada en negrita</strong>, con{" "}
+          <strong>gran ojo interno</strong>, ideal para imprimir en fondos
+          oscuros sin pérdida de detalle. Se prestó especial atención a la
+          jerarquización de la información y a la optimización del diseño para
+          producción.
         </p>
         <div className="flex gap-x-4 flex-row">
           <div className="basis-1/2 lg:basis-1/3">
@@ -176,13 +198,17 @@ function ShopyLibreTrabajos() {
       </ContenedorProyecto>
       <ContenedorProyecto>
         <h3 className="mb-3">
-          MENN EventPlanner: <span className="font-normal">Packaging contenedor</span>
+          MENN EventPlanner:{" "}
+          <span className="font-normal">Packaging contenedor</span>
         </h3>
-        <p>
-          Como la marca lo indica <strong>MENN</strong> es una línea de productos para hombres, idealmente nómadas
-          digitales, que viajan por el mundo con su oficina a cuesta. En este caso el producto era una agenda (o{" "}
-          <em>EventPlanner</em>) el cuál iba a llevar un packaging totalmente negro mate impreso con laca UV brillante
-          sectorizada, obteniendo un resultado elegante y moderno.
+        <p className="mb-6">
+          MENN es una línea dirigida a hombres —en especial, a nómadas
+          digitales— que busca transmitir una estética funcional y elegante. El
+          producto era una agenda estilo EventPlanner, pensada para acompañar el
+          trabajo y los viajes. El diseño del packaging consistió en una caja
+          negra mate con impresión en laca UV sectorizada, resaltando zonas
+          estratégicas del diseño. El resultado fue un empaque sofisticado y
+          profesional, coherente con el público objetivo del producto.
         </p>
         <div className="inline md:flex gap-x-4 flex-row">
           <div className="basis-2/3">
@@ -194,12 +220,14 @@ function ShopyLibreTrabajos() {
               className="w-full mb-2"
             />
           </div>
-          <iframe
-            src="/videos/shopylibre-eventplaner-final.mp4"
-            frameBorder="0"
-            allowFullScreen
-            className="w-full min-h-60"
-          />
+          <div className="w-full aspect-auto sm:aspect-[4/3]">
+            <video
+              src="/videos/shopylibre-eventplaner-final.mp4"
+              controls
+              preload="metadata"
+              className="w-full h-full object-cover rounded-md"
+            />
+          </div>
         </div>
       </ContenedorProyecto>
     </LayoutProyecto>
