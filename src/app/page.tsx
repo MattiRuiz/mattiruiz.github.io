@@ -3,26 +3,50 @@
 import { Proyectos, Habilidades, Hero } from "../components";
 import { TituloHome, CardEspecialidades } from "../components/ui";
 
-import { PiBezierCurveDuotone, PiAppWindowDuotone, PiBracketsCurlyDuotone } from "react-icons/pi";
+import {
+  PiBezierCurveDuotone,
+  PiAppWindowDuotone,
+  PiBracketsCurlyDuotone,
+} from "react-icons/pi";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <div className="pb-4 mt-6 text-center w-full md:w-3/4 mx-auto" id="sobre-mi">
+      <div
+        className="pb-4 mt-6 text-center w-full md:w-3/4 mx-auto"
+        id="sobre-mi"
+      >
         <TituloHome>Sobre mi</TituloHome>
         <p className="">
-          ¡Hola! Soy Matias, tengo 34 años y vivo en Rosario, Argentina. Soy <strong>Licenciado en Diseño Gráfico</strong> (Universidad Abierta Interamericana, 2019) y <strong>Técnico Universitario en Programación</strong> (Universidad Tecnológica Nacional, 2023).
-          Desde 2020, trabajé en diversos proyectos vinculados al diseño y al desarrollo web, tanto de forma independiente como en colaboración con otros profesionales. En este portfolio comparto una selección de esos trabajos, que también mis perfiles de <a href="https://www.behance.net/matias-ruiz" target="_blank">
+          ¡Hola! Soy Matias, tengo 35 años y vivo en Rosario, Argentina. Soy{" "}
+          <strong>Licenciado en Diseño Gráfico</strong> (Universidad Abierta
+          Interamericana, 2019) y{" "}
+          <strong>Técnico Universitario en Programación</strong> (Universidad
+          Tecnológica Nacional, 2023). Desde 2020 trabajo en proyectos
+          vinculados al diseño y al desarrollo web, tanto de forma independiente
+          como en colaboración con otros profesionales. En este portfolio
+          comparto una selección de esos trabajos, que también podés ver en mis
+          perfiles de{" "}
+          <a href="https://www.behance.net/matias-ruiz" target="_blank">
             Behance
           </a>{" "}
           y{" "}
           <a href="https://github.com/MattiRuiz" target="_blank">
             GitHub
-          </a> con esos y otros proyectos
+          </a>
           .
         </p>
-        <p>Actualmente y desde el comienzo del 2023, me desempeño como <strong>profesor titular</strong> de la materia <em>Tipografía y Entorno Digital</em> en la Universidad del Gran Rosario, en el CCC de Licenciatura en Diseño de Comunicación Visual.</p>
+        <p>
+          Desde comienzos de 2023 me desempeño como{" "}
+          <strong>profesor titular</strong> de la materia{" "}
+          <em>Tipografía y Entorno Digital</em> en el CCC de Licenciatura en
+          Diseño de Comunicación Visual de la{" "}
+          <strong>Universidad del Gran Rosario</strong>. Además, desde agosto de
+          2025 soy <strong>profesor</strong> de la materia{" "}
+          <em>Programación II</em> en la Tecnicatura Universitaria en
+          Programación de la <strong>Universidad Tecnológica Nacional</strong>.
+        </p>
         <div className="w-1/3 h-px bg-white opacity-75 mx-auto mt-8 flex justify-center items-center">
           <div className="w-3 h-3 rounded-full bg-white"></div>
         </div>
